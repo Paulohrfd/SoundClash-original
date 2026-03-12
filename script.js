@@ -1,197 +1,357 @@
 const tracks = [
+  {
+    title: "Blinding Lights",
+    artist: "The Weeknd",
+    embed: "https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b"
+  },
+  {
+    title: "As It Was",
+    artist: "Harry Styles",
+    embed: "https://open.spotify.com/embed/track/4LRPiXqCikLlN15c3yImP7"
+  },
+  {
+    title: "Another Love",
+    artist: "Tom Odell",
+    embed: "https://open.spotify.com/embed/track/3JvKfv6T31zO0ini8iNItO"
+  },
+  {
+    title: "Sweater Weather",
+    artist: "The Neighbourhood",
+    embed: "https://open.spotify.com/embed/track/2QjOHCTQ1Jl3zawyYOpxh6"
+  },
+  {
+    title: "505",
+    artist: "Arctic Monkeys",
+    embed: "https://open.spotify.com/embed/track/58ge6dfP91o9oXMzq3XkIS"
+  },
+  {
+    title: "Heat Waves",
+    artist: "Glass Animals",
+    embed: "https://open.spotify.com/embed/track/02MWAaffLxlfxAUY7c5dvx"
+  },
+  {
+    title: "Night Changes",
+    artist: "One Direction",
+    embed: "https://open.spotify.com/embed/track/5O2P9iiztwhomNh8xkR9lJ"
+  },
+  {
+    title: "Midnight City",
+    artist: "M83",
+    embed: "https://open.spotify.com/embed/track/3AhXZa8sUQht0UEdBJgpGc"
+  },
+  {
+    title: "Shape of You",
+    artist: "Ed Sheeran",
+    embed: "https://open.spotify.com/embed/track/7qiZfU4dY1lWllzX7mPBI3"
+  },
+  {
+    title: "Perfect",
+    artist: "Ed Sheeran",
+    embed: "https://open.spotify.com/embed/track/0tgVpDi06FyKpA1z0VMD4v"
+  },
+  {
+    title: "Believer",
+    artist: "Imagine Dragons",
+    embed: "https://open.spotify.com/embed/track/0pqnGHJpmpxLKifKRmU6WP"
+  },
+  {
+    title: "Radioactive",
+    artist: "Imagine Dragons",
+    embed: "https://open.spotify.com/embed/track/62yJjFtgkhUrXktIoSjgP2"
+  },
+  {
+    title: "Counting Stars",
+    artist: "OneRepublic",
+    embed: "https://open.spotify.com/embed/track/2tpWsVSb9UEmDRxAl1zhX1"
+  },
+  {
+    title: "Someone You Loved",
+    artist: "Lewis Capaldi",
+    embed: "https://open.spotify.com/embed/track/7qEHsqek33rTcFNT9PFqLf"
+  },
+  {
+    title: "Starboy",
+    artist: "The Weeknd",
+    embed: "https://open.spotify.com/embed/track/7MXVkk9YMctZqd1Srtv4MB"
+  },
+  {
+    title: "Take On Me",
+    artist: "a-ha",
+    embed: "https://open.spotify.com/embed/track/2WfaOiMkCvy7F5fcp2zZ8L"
+  },
+  {
+    title: "Bohemian Rhapsody",
+    artist: "Queen",
+    embed: "https://open.spotify.com/embed/track/7tFiyTwD0nx5a1eklYtX2J"
+  },
+  {
+    title: "Billie Jean",
+    artist: "Michael Jackson",
+    embed: "https://open.spotify.com/embed/track/5ChkMS8OtdzJeqyybCc9R5"
+  },
+  {
+    title: "Thriller",
+    artist: "Michael Jackson",
+    embed: "https://open.spotify.com/embed/track/2LlQb7Uoj1kKyGhlkBf9aC"
+  },
+  {
+    title: "Smells Like Teen Spirit",
+    artist: "Nirvana",
+    embed: "https://open.spotify.com/embed/track/5ghIJDpPoe3CfHMGu71E6T"
+  },
+  {
+    title: "Hotel California",
+    artist: "Eagles",
+    embed: "https://open.spotify.com/embed/track/40riOy7x9W7GXjyGp4pjAv"
+  },
+  {
+    title: "Sweet Child O' Mine",
+    artist: "Guns N' Roses",
+    embed: "https://open.spotify.com/embed/track/7o2CTH4ctstm8TNelqjb51"
+  },
+  {
+    title: "Wonderwall",
+    artist: "Oasis",
+    embed: "https://open.spotify.com/embed/track/7ygpwy2qP3NbrxVkHvUhXY"
+  },
+  {
+    title: "Lose Yourself",
+    artist: "Eminem",
+    embed: "https://open.spotify.com/embed/track/7MJQ9Nfxzh8LPZ9e9u68Fq"
+  },
+  {
+    title: "Envolver",
+    artist: "Anitta",
+    embed: "https://open.spotify.com/embed/track/2qxmye6gAegTMjLKEBoR3d"
+  },
+  {
+    title: "Vai Malandra",
+    artist: "Anitta",
+    embed: "https://open.spotify.com/embed/track/6t9F1z5xk2mO4RZ0sZx7MZ"
+  },
+  {
+    title: "Kenny G",
+    artist: "Matuê",
+    embed: "https://open.spotify.com/embed/track/4G8gkOterJn0Ywt6uhqbhp"
+  },
+  {
+    title: "Máquina do Tempo",
+    artist: "Matuê",
+    embed: "https://open.spotify.com/embed/track/6xX7nYxV1lXHrp236UMtO4"
+  },
+  {
+    title: "Tipo Gin",
+    artist: "Kevin O Chris",
+    embed: "https://open.spotify.com/embed/track/3Y1vV7Y2kZZgwyXR0YJIUK"
+  },
+  {
+    title: "Ela É do Tipo",
+    artist: "Kevin O Chris",
+    embed: "https://open.spotify.com/embed/track/6K8VQ84M3q2F7YQH7hV7wF"
+  },
+  {
+    title: "Dias de Luta, Dias de Glória",
+    artist: "Charlie Brown Jr.",
+    embed: "https://open.spotify.com/embed/track/0gplL1WMoJ6iYaPgMCL0gX"
+  },
+  {
+    title: "Céu Azul",
+    artist: "Charlie Brown Jr.",
+    embed: "https://open.spotify.com/embed/track/6GmHnXy1p9N0UEhoJaMItZ"
+  },
+  {
 
-{
-title:"Blinding Lights",
-artist:"The Weeknd",
-embed:"https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b"
+  
+title:"Viva La Vida",
+artist:"Coldplay",
+embed:"https://open.spotify.com/embed/track/1mea3bSkSGXuIRvnydlB5b"
 },
 
 {
-title:"As It Was",
-artist:"Harry Styles",
-embed:"https://open.spotify.com/embed/track/4LRPiXqCikLlN15c3yImP7"
+title:"The Scientist",
+artist:"Coldplay",
+embed:"https://open.spotify.com/embed/track/75JFxkI2RXiU7L9VXzMkle"
 },
 
 {
-title:"Another Love",
-artist:"Tom Odell",
-embed:"https://open.spotify.com/embed/track/3JvKfv6T31zO0ini8iNItO"
+title:"Yellow",
+artist:"Coldplay",
+embed:"https://open.spotify.com/embed/track/3AJwUDP919kvQ9QcozQPxg"
 },
 
 {
-title:"Sweater Weather",
-artist:"The Neighbourhood",
-embed:"https://open.spotify.com/embed/track/2QjOHCTQ1Jl3zawyYOpxh6"
+title:"Numb",
+artist:"Linkin Park",
+embed:"https://open.spotify.com/embed/track/2nLtzopw4rPReszdYBJU6h"
 },
 
 {
-title:"505",
-artist:"Arctic Monkeys",
-embed:"https://open.spotify.com/embed/track/58ge6dfP91o9oXMzq3XkIS"
+title:"In The End",
+artist:"Linkin Park",
+embed:"https://open.spotify.com/embed/track/60a0Rd6pjrkxjPbaKzXjfq"
 },
 
 {
-title:"Heat Waves",
-artist:"Glass Animals",
-embed:"https://open.spotify.com/embed/track/02MWAaffLxlfxAUY7c5dvx"
+title:"Faded",
+artist:"Alan Walker",
+embed:"https://open.spotify.com/embed/track/698ItKASDavgwZ3WjaWjtz"
 },
 
 {
-title:"Night Changes",
-artist:"One Direction",
-embed:"https://open.spotify.com/embed/track/5O2P9iiztwhomNh8xkR9lJ"
+title:"Animals",
+artist:"Martin Garrix",
+embed:"https://open.spotify.com/embed/track/6Jv5y6xv9mZzZJ8U5zq4xF"
 },
 
 {
-title:"Midnight City",
-artist:"M83",
-embed:"https://open.spotify.com/embed/track/3AhXZa8sUQht0UEdBJgpGc"
+title:"Wake Me Up",
+artist:"Avicii",
+embed:"https://open.spotify.com/embed/track/0nrRP2bk19rLc0orkWPQk2"
 },
 
 {
-title:"Shape of You",
-artist:"Ed Sheeran",
-embed:"https://open.spotify.com/embed/track/7qiZfU4dY1lWllzX7mPBI3"
+title:"Levels",
+artist:"Avicii",
+embed:"https://open.spotify.com/embed/track/6XeXH6QK4uF0yS9z5eO3nT"
 },
 
 {
-title:"Perfect",
-artist:"Ed Sheeran",
-embed:"https://open.spotify.com/embed/track/0tgVpDi06FyKpA1z0VMD4v"
+title:"Titanium",
+artist:"David Guetta",
+embed:"https://open.spotify.com/embed/track/1VdZ0vKfR5jneCmWIUAMxK"
 },
 
 {
-title:"Believer",
-artist:"Imagine Dragons",
-embed:"https://open.spotify.com/embed/track/0pqnGHJpmpxLKifKRmU6WP"
+title:"Lean On",
+artist:"Major Lazer",
+embed:"https://open.spotify.com/embed/track/1Lim1Py7xBgbAkAys3AGAG"
 },
 
 {
-title:"Radioactive",
-artist:"Imagine Dragons",
-embed:"https://open.spotify.com/embed/track/62yJjFtgkhUrXktIoSjgP2"
+title:"Closer",
+artist:"The Chainsmokers",
+embed:"https://open.spotify.com/embed/track/7BKLCZ1jbUBVqRi2FVlTVw"
 },
 
 {
-title:"Counting Stars",
-artist:"OneRepublic",
-embed:"https://open.spotify.com/embed/track/2tpWsVSb9UEmDRxAl1zhX1"
+title:"Happier",
+artist:"Marshmello",
+embed:"https://open.spotify.com/embed/track/7BqBn9nzAq8spo5e7cZ0dJ"
 },
 
 {
-title:"Someone You Loved",
-artist:"Lewis Capaldi",
-embed:"https://open.spotify.com/embed/track/7qEHsqek33rTcFNT9PFqLf"
+title:"Sunflower",
+artist:"Post Malone",
+embed:"https://open.spotify.com/embed/track/3KkXRkHbMCARz0aVfEt68P"
 },
 
 {
-title:"Starboy",
-artist:"The Weeknd",
-embed:"https://open.spotify.com/embed/track/7MXVkk9YMctZqd1Srtv4MB"
+title:"Rockstar",
+artist:"Post Malone",
+embed:"https://open.spotify.com/embed/track/7wGoVu4Dady5GV0Sv4UIsx"
 },
 
 {
-title:"Take On Me",
-artist:"a-ha",
-embed:"https://open.spotify.com/embed/track/2WfaOiMkCvy7F5fcp2zZ8L"
+title:"Circles",
+artist:"Post Malone",
+embed:"https://open.spotify.com/embed/track/21jGcNKet2qwijlDFuPiPb"
 },
 
 {
-title:"Bohemian Rhapsody",
-artist:"Queen",
-embed:"https://open.spotify.com/embed/track/7tFiyTwD0nx5a1eklYtX2J"
+title:"Old Town Road",
+artist:"Lil Nas X",
+embed:"https://open.spotify.com/embed/track/2YpeDb67231RjR0MgVLzsG"
 },
 
 {
-title:"Billie Jean",
-artist:"Michael Jackson",
-embed:"https://open.spotify.com/embed/track/5ChkMS8OtdzJeqyybCc9R5"
+title:"Industry Baby",
+artist:"Lil Nas X",
+embed:"https://open.spotify.com/embed/track/27NovPIUIRrOZoCHxABJwK"
 },
 
 {
-title:"Thriller",
-artist:"Michael Jackson",
-embed:"https://open.spotify.com/embed/track/2LlQb7Uoj1kKyGhlkBf9aC"
+title:"Bad Guy",
+artist:"Billie Eilish",
+embed:"https://open.spotify.com/embed/track/2Fxmhks0bxGSBdJ92vM42m"
 },
 
 {
-title:"Smells Like Teen Spirit",
-artist:"Nirvana",
-embed:"https://open.spotify.com/embed/track/5ghIJDpPoe3CfHMGu71E6T"
+title:"Lovely",
+artist:"Billie Eilish",
+embed:"https://open.spotify.com/embed/track/0u2P5u6lvoDfwTYjAADbn4"
 },
 
 {
-title:"Hotel California",
-artist:"Eagles",
-embed:"https://open.spotify.com/embed/track/40riOy7x9W7GXjyGp4pjAv"
+title:"Hello",
+artist:"Adele",
+embed:"https://open.spotify.com/embed/track/4kflIGfjdZJW4ot2ioixTB"
 },
 
 {
-title:"Sweet Child O Mine",
-artist:"Guns N Roses",
-embed:"https://open.spotify.com/embed/track/7o2CTH4ctstm8TNelqjb51"
+title:"Rolling In The Deep",
+artist:"Adele",
+embed:"https://open.spotify.com/embed/track/1c8gk2PeTE04A1pIDH9YMk"
 },
 
 {
-title:"Wonderwall",
-artist:"Oasis",
-embed:"https://open.spotify.com/embed/track/7ygpwy2qP3NbrxVkHvUhXY"
+title:"Someone Like You",
+artist:"Adele",
+embed:"https://open.spotify.com/embed/track/4kflIGfjdZJW4ot2ioixTB"
 },
 
 {
-title:"Lose Yourself",
-artist:"Eminem",
-embed:"https://open.spotify.com/embed/track/7MJQ9Nfxzh8LPZ9e9u68Fq"
+title:"Poker Face",
+artist:"Lady Gaga",
+embed:"https://open.spotify.com/embed/track/6wVWJl64yoTzU27EI8ep20"
 },
 
 {
-title:"Envolver",
-artist:"Anitta",
-embed:"https://open.spotify.com/embed/track/2qxmye6gAegTMjLKEBoR3d"
+title:"Bad Romance",
+artist:"Lady Gaga",
+embed:"https://open.spotify.com/embed/track/0SiywuOBRcynK0uKGWdCnn"
 },
 
 {
-title:"Vai Malandra",
-artist:"Anitta",
-embed:"https://open.spotify.com/embed/track/6t9F1z5xk2mO4RZ0sZx7MZ"
+title:"Shallow",
+artist:"Lady Gaga",
+embed:"https://open.spotify.com/embed/track/2VxeLyX666F8uXCJ0dZF8B"
 },
 
 {
-title:"Kenny G",
-artist:"Matuê",
-embed:"https://open.spotify.com/embed/track/4G8gkOterJn0Ywt6uhqbhp"
+title:"Firework",
+artist:"Katy Perry",
+embed:"https://open.spotify.com/embed/track/4lCv7b86sLynZbXhfScfm2"
 },
 
 {
-title:"Máquina do Tempo",
-artist:"Matuê",
-embed:"https://open.spotify.com/embed/track/6xX7nYxV1lXHrp236UMtO4"
+title:"Roar",
+artist:"Katy Perry",
+embed:"https://open.spotify.com/embed/track/27tNWlhdAryQY04Gb2ZhUI"
 },
 
 {
-title:"Tipo Gin",
-artist:"Kevin O Chris",
-embed:"https://open.spotify.com/embed/track/3Y1vV7Y2kZZgwyXR0YJIUK"
+title:"Dark Horse",
+artist:"Katy Perry",
+embed:"https://open.spotify.com/embed/track/5jrdCoLpJSvHHorevXBATy"
 },
 
 {
-title:"Ela É do Tipo",
-artist:"Kevin O Chris",
-embed:"https://open.spotify.com/embed/track/6K8VQ84M3q2F7YQH7hV7wF"
+title:"Havana",
+artist:"Camila Cabello",
+embed:"https://open.spotify.com/embed/track/1rfofaqEpACxVEHIZBJe6W"
 },
 
 {
-title:"Dias de Luta Dias de Glória",
-artist:"Charlie Brown Jr",
-embed:"https://open.spotify.com/embed/track/0gplL1WMoJ6iYaPgMCL0gX"
+title:"Señorita",
+artist:"Shawn Mendes",
+embed:"https://open.spotify.com/embed/track/0TK2YIli7K1leLovkQiNik"
 },
 
 {
-title:"Céu Azul",
-artist:"Charlie Brown Jr",
-embed:"https://open.spotify.com/embed/track/6GmHnXy1p9N0UEhoJaMItZ"
+title:"Stitches",
+artist:"Shawn Mendes",
+embed:"https://open.spotify.com/embed/track/5jsw9uXEGuKyJzs0boZ1bT"
 }
-
 ];
 
 const roundNames = {
@@ -354,4 +514,5 @@ function render() {
 }
 
 render();
+
 
