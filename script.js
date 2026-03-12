@@ -1,44 +1,197 @@
 const tracks = [
-  {
-    title: "Blinding Lights",
-    artist: "The Weeknd",
-    embed: "https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b?utm_source=generator"
-  },
-  {
-    title: "As It Was",
-    artist: "Harry Styles",
-    embed: "https://open.spotify.com/embed/track/4LRPiXqCikLlN15c3yImP7?utm_source=generator"
-  },
-  {
-    title: "Another Love",
-    artist: "Tom Odell",
-    embed: "https://open.spotify.com/embed/track/3JvKfv6T31zO0ini8iNItO?utm_source=generator"
-  },
-  {
-    title: "Sweater Weather",
-    artist: "The Neighbourhood",
-    embed: "https://open.spotify.com/embed/track/2QjOHCTQ1Jl3zawyYOpxh6?utm_source=generator"
-  },
-  {
-    title: "505",
-    artist: "Arctic Monkeys",
-    embed: "https://open.spotify.com/embed/track/58ge6dfP91o9oXMzq3XkIS?utm_source=generator"
-  },
-  {
-    title: "Heat Waves",
-    artist: "Glass Animals",
-    embed: "https://open.spotify.com/embed/track/02MWAaffLxlfxAUY7c5dvx?utm_source=generator"
-  },
-  {
-    title: "Night Changes",
-    artist: "One Direction",
-    embed: "https://open.spotify.com/embed/track/5O2P9iiztwhomNh8xkR9lJ?utm_source=generator"
-  },
-  {
-    title: "Midnight City",
-    artist: "M83",
-    embed: "https://open.spotify.com/embed/track/3AhXZa8sUQht0UEdBJgpGc?utm_source=generator"
-  }
+
+{
+title:"Blinding Lights",
+artist:"The Weeknd",
+embed:"https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b"
+},
+
+{
+title:"As It Was",
+artist:"Harry Styles",
+embed:"https://open.spotify.com/embed/track/4LRPiXqCikLlN15c3yImP7"
+},
+
+{
+title:"Another Love",
+artist:"Tom Odell",
+embed:"https://open.spotify.com/embed/track/3JvKfv6T31zO0ini8iNItO"
+},
+
+{
+title:"Sweater Weather",
+artist:"The Neighbourhood",
+embed:"https://open.spotify.com/embed/track/2QjOHCTQ1Jl3zawyYOpxh6"
+},
+
+{
+title:"505",
+artist:"Arctic Monkeys",
+embed:"https://open.spotify.com/embed/track/58ge6dfP91o9oXMzq3XkIS"
+},
+
+{
+title:"Heat Waves",
+artist:"Glass Animals",
+embed:"https://open.spotify.com/embed/track/02MWAaffLxlfxAUY7c5dvx"
+},
+
+{
+title:"Night Changes",
+artist:"One Direction",
+embed:"https://open.spotify.com/embed/track/5O2P9iiztwhomNh8xkR9lJ"
+},
+
+{
+title:"Midnight City",
+artist:"M83",
+embed:"https://open.spotify.com/embed/track/3AhXZa8sUQht0UEdBJgpGc"
+},
+
+{
+title:"Shape of You",
+artist:"Ed Sheeran",
+embed:"https://open.spotify.com/embed/track/7qiZfU4dY1lWllzX7mPBI3"
+},
+
+{
+title:"Perfect",
+artist:"Ed Sheeran",
+embed:"https://open.spotify.com/embed/track/0tgVpDi06FyKpA1z0VMD4v"
+},
+
+{
+title:"Believer",
+artist:"Imagine Dragons",
+embed:"https://open.spotify.com/embed/track/0pqnGHJpmpxLKifKRmU6WP"
+},
+
+{
+title:"Radioactive",
+artist:"Imagine Dragons",
+embed:"https://open.spotify.com/embed/track/62yJjFtgkhUrXktIoSjgP2"
+},
+
+{
+title:"Counting Stars",
+artist:"OneRepublic",
+embed:"https://open.spotify.com/embed/track/2tpWsVSb9UEmDRxAl1zhX1"
+},
+
+{
+title:"Someone You Loved",
+artist:"Lewis Capaldi",
+embed:"https://open.spotify.com/embed/track/7qEHsqek33rTcFNT9PFqLf"
+},
+
+{
+title:"Starboy",
+artist:"The Weeknd",
+embed:"https://open.spotify.com/embed/track/7MXVkk9YMctZqd1Srtv4MB"
+},
+
+{
+title:"Take On Me",
+artist:"a-ha",
+embed:"https://open.spotify.com/embed/track/2WfaOiMkCvy7F5fcp2zZ8L"
+},
+
+{
+title:"Bohemian Rhapsody",
+artist:"Queen",
+embed:"https://open.spotify.com/embed/track/7tFiyTwD0nx5a1eklYtX2J"
+},
+
+{
+title:"Billie Jean",
+artist:"Michael Jackson",
+embed:"https://open.spotify.com/embed/track/5ChkMS8OtdzJeqyybCc9R5"
+},
+
+{
+title:"Thriller",
+artist:"Michael Jackson",
+embed:"https://open.spotify.com/embed/track/2LlQb7Uoj1kKyGhlkBf9aC"
+},
+
+{
+title:"Smells Like Teen Spirit",
+artist:"Nirvana",
+embed:"https://open.spotify.com/embed/track/5ghIJDpPoe3CfHMGu71E6T"
+},
+
+{
+title:"Hotel California",
+artist:"Eagles",
+embed:"https://open.spotify.com/embed/track/40riOy7x9W7GXjyGp4pjAv"
+},
+
+{
+title:"Sweet Child O Mine",
+artist:"Guns N Roses",
+embed:"https://open.spotify.com/embed/track/7o2CTH4ctstm8TNelqjb51"
+},
+
+{
+title:"Wonderwall",
+artist:"Oasis",
+embed:"https://open.spotify.com/embed/track/7ygpwy2qP3NbrxVkHvUhXY"
+},
+
+{
+title:"Lose Yourself",
+artist:"Eminem",
+embed:"https://open.spotify.com/embed/track/7MJQ9Nfxzh8LPZ9e9u68Fq"
+},
+
+{
+title:"Envolver",
+artist:"Anitta",
+embed:"https://open.spotify.com/embed/track/2qxmye6gAegTMjLKEBoR3d"
+},
+
+{
+title:"Vai Malandra",
+artist:"Anitta",
+embed:"https://open.spotify.com/embed/track/6t9F1z5xk2mO4RZ0sZx7MZ"
+},
+
+{
+title:"Kenny G",
+artist:"Matuê",
+embed:"https://open.spotify.com/embed/track/4G8gkOterJn0Ywt6uhqbhp"
+},
+
+{
+title:"Máquina do Tempo",
+artist:"Matuê",
+embed:"https://open.spotify.com/embed/track/6xX7nYxV1lXHrp236UMtO4"
+},
+
+{
+title:"Tipo Gin",
+artist:"Kevin O Chris",
+embed:"https://open.spotify.com/embed/track/3Y1vV7Y2kZZgwyXR0YJIUK"
+},
+
+{
+title:"Ela É do Tipo",
+artist:"Kevin O Chris",
+embed:"https://open.spotify.com/embed/track/6K8VQ84M3q2F7YQH7hV7wF"
+},
+
+{
+title:"Dias de Luta Dias de Glória",
+artist:"Charlie Brown Jr",
+embed:"https://open.spotify.com/embed/track/0gplL1WMoJ6iYaPgMCL0gX"
+},
+
+{
+title:"Céu Azul",
+artist:"Charlie Brown Jr",
+embed:"https://open.spotify.com/embed/track/6GmHnXy1p9N0UEhoJaMItZ"
+}
+
 ];
 
 const roundNames = {
@@ -201,3 +354,4 @@ function render() {
 }
 
 render();
+
