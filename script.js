@@ -1080,11 +1080,31 @@ function renderWinnerScreen() {
   return `
     <div class="winner-screen">
       <p class="winner-title">CAMPEÃ DA SUA COPA</p>
-      <button onclick="compartilharCampea()" class="main-btn">
-Compartilhar minha campeã
-</button>
-      <h2 class="winner-song">${champion.title}</h2>
+     <h2 class="winner-song">${champion.title}</h2>
       <p class="winner-artist">${champion.artist}</p>
+      <button onclick="compartilharCampea()" class="main-btn">
+  Compartilhar minha campeã
+</button>
+      <button onclick="restartGame()" class="main-btn">
+        Jogar novamente
+      </button>
+
+    </div>
+  `;
+}function compartilharCampea() {
+
+  const card = document.querySelector(".winner-screen");
+
+  html2canvas(card).then(canvas => {
+
+    const link = document.createElement("a");
+    link.download = "soundclash-campea.png";
+    link.href = canvas.toDataURL();
+    link.click();
+
+  });
+
+}
 
       <div class="card" style="max-width:700px; width:100%;">
         <div class="player">
@@ -1189,6 +1209,18 @@ function compartilharCampea() {
     link.href = canvas.toDataURL();
     link.click();
 
+  });function compartilharCampea() {
+  const card = document.querySelector(".winner-screen");
+
+  if (!card || !window.html2canvas) return;
+
+  html2canvas(card).then(canvas => {
+    const link = document.createElement("a");
+    link.download = "soundclash-campea.png";
+    link.href = canvas.toDataURL("image/png");
+    link.click();
   });
+}
 
 }
+
