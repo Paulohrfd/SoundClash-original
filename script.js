@@ -351,6 +351,391 @@ embed:"https://open.spotify.com/embed/track/0TK2YIli7K1leLovkQiNik"
 title:"Stitches",
 artist:"Shawn Mendes",
 embed:"https://open.spotify.com/embed/track/5jsw9uXEGuKyJzs0boZ1bT"
+},
+
+ {
+title:"Take Me To Church",
+artist:"Hozier",
+embed:"https://open.spotify.com/embed/track/3dYD57lRAUcMHufyqn9GcI"
+},
+
+{
+title:"Riptide",
+artist:"Vance Joy",
+embed:"https://open.spotify.com/embed/track/3J9LjYIuVq2M8o7rVd6c5U"
+},
+
+{
+title:"Stressed Out",
+artist:"Twenty One Pilots",
+embed:"https://open.spotify.com/embed/track/3CRDbSIZ4r5MsZ0YwxuEkn"
+},
+
+{
+title:"Ride",
+artist:"Twenty One Pilots",
+embed:"https://open.spotify.com/embed/track/2Z8WuEywRWYTKe1NybPQEW"
+},
+
+{
+title:"Heathens",
+artist:"Twenty One Pilots",
+embed:"https://open.spotify.com/embed/track/6i0V12jOa3mr6uu4WYhUBr"
+},
+
+{
+title:"Counting Stars",
+artist:"OneRepublic",
+embed:"https://open.spotify.com/embed/track/2tpWsVSb9UEmDRxAl1zhX1"
+},
+
+{
+title:"Apologize",
+artist:"OneRepublic",
+embed:"https://open.spotify.com/embed/track/2NBQmPrOEEjA8VbeWOQGxO"
+},
+
+{
+title:"Photograph",
+artist:"Ed Sheeran",
+embed:"https://open.spotify.com/embed/track/1HNkqx9Ahdgi1Ixy2xkKkL"
+},
+
+{
+title:"Thinking Out Loud",
+artist:"Ed Sheeran",
+embed:"https://open.spotify.com/embed/track/34gCuhDGsG4bRPIf9bb02f"
+},
+
+{
+title:"Love Yourself",
+artist:"Justin Bieber",
+embed:"https://open.spotify.com/embed/track/50kpGaPAhYJ3sGmk6vplg0"
+},
+
+{
+title:"Sorry",
+artist:"Justin Bieber",
+embed:"https://open.spotify.com/embed/track/09CtPGIpYB4BrO8qb1RGsF"
+},
+
+{
+title:"Stay",
+artist:"Justin Bieber",
+embed:"https://open.spotify.com/embed/track/5HCyWlXZPP0y6Gqq8TgA20"
+},
+
+{
+title:"Peaches",
+artist:"Justin Bieber",
+embed:"https://open.spotify.com/embed/track/4iJyoBOLtHqaGxP12qzhQI"
+},
+
+{
+title:"God's Plan",
+artist:"Drake",
+embed:"https://open.spotify.com/embed/track/6DCZcSspjsKoFjzjrWoCdn"
+},
+
+{
+title:"Hotline Bling",
+artist:"Drake",
+embed:"https://open.spotify.com/embed/track/0wwPcA6wtMf6HUMpIRdeP7"
+},
+
+{
+title:"One Dance",
+artist:"Drake",
+embed:"https://open.spotify.com/embed/track/1zi7xx7UVEFkmKfv06H8x0"
+},
+
+{
+title:"Sicko Mode",
+artist:"Travis Scott",
+embed:"https://open.spotify.com/embed/track/2xLMifQCjDGFmkHkpNLD9h"
+},
+
+{
+title:"Goosebumps",
+artist:"Travis Scott",
+embed:"https://open.spotify.com/embed/track/6gBFPUFcJLzWGx4lenP6h2"
+},
+
+{
+title:"HUMBLE",
+artist:"Kendrick Lamar",
+embed:"https://open.spotify.com/embed/track/7KXjTSCq5nL1LoYtL7XAwS"
+},
+
+{
+title:"DNA",
+artist:"Kendrick Lamar",
+embed:"https://open.spotify.com/embed/track/6HZILIRieu8S0iqY8kIKhj"
+},
+
+{
+title:"Lucid Dreams",
+artist:"Juice WRLD",
+embed:"https://open.spotify.com/embed/track/285pBltuF7vW8TeWk8hdRR"
+},
+
+{
+title:"All Girls Are The Same",
+artist:"Juice WRLD",
+embed:"https://open.spotify.com/embed/track/0t3ZvGKlmYmVsDzBJAXK8C"
+},
+
+{
+title:"XO TOUR Llif3",
+artist:"Lil Uzi Vert",
+embed:"https://open.spotify.com/embed/track/7GX5flRQZVHRAGd6B4TmDO"
+},
+
+{
+title:"Mask Off",
+artist:"Future",
+embed:"https://open.spotify.com/embed/track/0VgkVdmE4gld66l8iyGjgx"
+},
+
+{
+title:"HUMBLE",
+artist:"Kendrick Lamar",
+embed:"https://open.spotify.com/embed/track/7KXjTSCq5nL1LoYtL7XAwS"
+},
+
+{
+title:"Praise The Lord",
+artist:"A$AP Rocky",
+embed:"https://open.spotify.com/embed/track/7ycWLEP1GsNjVvcjawXz3z"
+},
+
+{
+title:"Sunflower",
+artist:"Post Malone",
+embed:"https://open.spotify.com/embed/track/3KkXRkHbMCARz0aVfEt68P"
+},
+
+{
+title:"Better Now",
+artist:"Post Malone",
+embed:"https://open.spotify.com/embed/track/7dt6x5M1jzdTEt8oCbisTK"
+},
+
+{
+title:"Congratulations",
+artist:"Post Malone",
+embed:"https://open.spotify.com/embed/track/3a1lNhkSLSkpJE4MSHpDu9"
+},
+
+{
+title:"Rockstar",
+artist:"Post Malone",
+embed:"https://open.spotify.com/embed/track/7wGoVu4Dady5GV0Sv4UIsx"
+},
+
+{
+title:"Circles",
+artist:"Post Malone",
+embed:"https://open.spotify.com/embed/track/21jGcNKet2qwijlDFuPiPb"
+},
+
+{
+title:"I Wanna Be Yours",
+artist:"Arctic Monkeys",
+embed:"https://open.spotify.com/embed/track/5XeFesFbtLpXzIVDNQP22n"
+},
+
+{
+  {
+title:"Africa",
+artist:"Toto",
+embed:"https://open.spotify.com/embed/track/2374M0fQpWi3dLnB54qaLX"
+},
+
+{
+title:"Eye Of The Tiger",
+artist:"Survivor",
+embed:"https://open.spotify.com/embed/track/2KH16WveTQWT6KOG9Rg6e2"
+},
+
+{
+title:"Take Me Home Country Roads",
+artist:"John Denver",
+embed:"https://open.spotify.com/embed/track/1YYhDizHx7PnDhAhko6cDS"
+},
+
+{
+title:"Dancing Queen",
+artist:"ABBA",
+embed:"https://open.spotify.com/embed/track/0GjEhVFGZW8afUYGChu3Rr"
+},
+
+{
+title:"Mamma Mia",
+artist:"ABBA",
+embed:"https://open.spotify.com/embed/track/2TxCwUlqaOH3TIyJqGgR91"
+},
+
+{
+title:"Gimme Gimme Gimme",
+artist:"ABBA",
+embed:"https://open.spotify.com/embed/track/3vkQ5DAB1qQMYO4Mr9zJN6"
+},
+
+{
+title:"Don't Stop Believin",
+artist:"Journey",
+embed:"https://open.spotify.com/embed/track/4bHsxqR3GMrXTxEPLuK5ue"
+},
+
+{
+title:"Livin On A Prayer",
+artist:"Bon Jovi",
+embed:"https://open.spotify.com/embed/track/37ZJ0p5Jm13JPevGcx4SkF"
+},
+
+{
+title:"It's My Life",
+artist:"Bon Jovi",
+embed:"https://open.spotify.com/embed/track/0v1XpBHnsbkCn7iJ9Ucr1l"
+},
+
+{
+title:"Thunderstruck",
+artist:"AC/DC",
+embed:"https://open.spotify.com/embed/track/57bgtoPSgt236HzfBOd8kj"
+},
+
+{
+title:"Back In Black",
+artist:"AC/DC",
+embed:"https://open.spotify.com/embed/track/08mG3Y1vljYA6bvDt4Wqkj"
+},
+
+{
+title:"Highway To Hell",
+artist:"AC/DC",
+embed:"https://open.spotify.com/embed/track/2zYzyRzz6pRmhPzyfMEC8s"
+},
+
+{
+title:"Seven Nation Army",
+artist:"The White Stripes",
+embed:"https://open.spotify.com/embed/track/3dPQuX8Gs42Y7b454ybpMR"
+},
+
+{
+title:"Mr Brightside",
+artist:"The Killers",
+embed:"https://open.spotify.com/embed/track/7oK9VyNzrYvRFo7nQEYkWN"
+},
+
+{
+title:"Somebody Told Me",
+artist:"The Killers",
+embed:"https://open.spotify.com/embed/track/4FgdJ4vJrYzF6kV6PpVZBq"
+},
+
+{
+title:"Boulevard Of Broken Dreams",
+artist:"Green Day",
+embed:"https://open.spotify.com/embed/track/5GorCbAP4aL0EJ16frG2hd"
+},
+
+{
+title:"American Idiot",
+artist:"Green Day",
+embed:"https://open.spotify.com/embed/track/6nTiIhLmQ3FWhvrGafw2zj"
+},
+
+{
+title:"Basket Case",
+artist:"Green Day",
+embed:"https://open.spotify.com/embed/track/6L89mwZXSOwYl76YXfX13s"
+},
+
+{
+title:"Californication",
+artist:"Red Hot Chili Peppers",
+embed:"https://open.spotify.com/embed/track/48UPSzbZjgc449aqz8bxox"
+},
+
+{
+title:"Can't Stop",
+artist:"Red Hot Chili Peppers",
+embed:"https://open.spotify.com/embed/track/3ZOEytgrvLwQaqXreDs2Jx"
+},
+
+{
+title:"Otherside",
+artist:"Red Hot Chili Peppers",
+embed:"https://open.spotify.com/embed/track/2i5K0EdMY5hG7L6vFQXG5E"
+},
+
+{
+title:"Zombie",
+artist:"The Cranberries",
+embed:"https://open.spotify.com/embed/track/7EZC6E7UjZe63f1jRmkWxt"
+},
+
+{
+title:"Take Me Out",
+artist:"Franz Ferdinand",
+embed:"https://open.spotify.com/embed/track/6ooluO7DiEhI1zmK94nRCM"
+},
+
+{
+title:"Feel Good Inc",
+artist:"Gorillaz",
+embed:"https://open.spotify.com/embed/track/0d28khcov6AiegSCpG5TuT"
+},
+
+{
+title:"Clint Eastwood",
+artist:"Gorillaz",
+embed:"https://open.spotify.com/embed/track/7yMiX7n9SBvadzox8T5jzT"
+},
+
+{
+title:"Pompeii",
+artist:"Bastille",
+embed:"https://open.spotify.com/embed/track/3gbBpTdY8lnQwqxNCcf795"
+},
+
+{
+title:"Radioactive",
+artist:"Imagine Dragons",
+embed:"https://open.spotify.com/embed/track/62yJjFtgkhUrXktIoSjgP2"
+},
+
+{
+title:"Demons",
+artist:"Imagine Dragons",
+embed:"https://open.spotify.com/embed/track/3LlAyCYU26dvFZBDUIMb7a"
+},
+
+{
+title:"Thunder",
+artist:"Imagine Dragons",
+embed:"https://open.spotify.com/embed/track/1zB4vmk8tFRmM9UULNzbLB"
+},
+
+{
+title:"Counting Stars",
+artist:"OneRepublic",
+embed:"https://open.spotify.com/embed/track/2tpWsVSb9UEmDRxAl1zhX1"
+},
+
+{
+title:"Apologize",
+artist:"OneRepublic",
+embed:"https://open.spotify.com/embed/track/2NBQmPrOEEjA8VbeWOQGxO"
+},
+
+{
+title:"Love Yourself",
+artist:"Justin Bieber",
+embed:"https://open.spotify.com/embed/track/50kpGaPAhYJ3sGmk6vplg0"
 }
 ];
 
@@ -514,5 +899,6 @@ function render() {
 }
 
 render();
+
 
 
