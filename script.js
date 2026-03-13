@@ -1126,44 +1126,31 @@ function renderWinnerScreen() {
       <p class="winner-artist">${champion.artist}</p>
 
       <div class="share-card">
+  <h2 class="share-title">Minha Copa no SoundClash</h2>
 
-<h2 class="share-title">Minha Copa no SoundClash</h2>
+  <div class="bracket">
+    <div class="col">
+      <h4>Quartas</h4>
+      ${finalsHistory.quarter.map(t => `<div class="match">${t.title}</div>`).join("")}
+    </div>
 
-<div class="bracket">
+    <div class="col">
+      <h4>Semifinal</h4>
+      ${finalsHistory.semi.map(t => `<div class="match">${t.title}</div>`).join("")}
+    </div>
 
-<div class="col">
-<h4>Quartas</h4>
-${finalsHistory.quarter.map(t => `<div class="match">${t.title}</div>`).join("")}
-</div>
+    <div class="col">
+      <h4>Final</h4>
+      ${finalsHistory.final.map(t => `<div class="match">${t.title}</div>`).join("")}
+    </div>
 
-<div class="col">
-<h4>Semifinal</h4>
-${finalsHistory.semi.map(t => `<div class="match">${t.title}</div>`).join("")}
-</div>
+    <div class="col champion">
+      <h4>🏆 Campeão</h4>
+      <div class="champion-name">${champion.title}</div>
+    </div>
+  </div>
 
-<div class="col">
-<h4>Final</h4>
-${finalsHistory.final.map(t => `<div class="match">${t.title}</div>`).join("")}
-</div>
-
-<div class="col champion">
-<h4>🏆 Campeão</h4>
-<div class="champion-name">${champion.title}</div>
-</div>
-
-</div>
-
-<p class="share-footer">soundclash</p>
-
-</div>
-
-<div class="share-champion">
-🏆 CAMPEÃO  
-<strong>${champion.title}</strong>
-</div>
-
-<p class="share-footer">soundclash</p>
-
+  <p class="share-footer">soundclash</p>
 </div>
         <p class="winner-title">🏆 CAMPEÃO SOUNDCLASH</p>
         <h3 class="winner-song">${champion.title}</h3>
