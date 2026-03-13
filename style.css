@@ -401,6 +401,16 @@ iframe {
   .logo{
     width:130px;
 }
+ @media (max-width:600px){
+
+.choice-btn{
+width:100%;
+font-size:18px;
+padding:16px;
+border-radius:14px;
+}
+
+}
 
 
 
