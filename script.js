@@ -5,9 +5,149 @@ const tracks = [
     embed: "https://open.spotify.com/embed/track/1JZDwJgE9VSC0V2GR66z63"
   },
   {
+    title: "Look At Me!",
+    artist: "XXXTENTACION",
+    embed: "https://open.spotify.com/embed/track/7floNISpH8VF4z4459Qo18"
+  },
+  {
+    title: "Toosie Slide",
+    artist: "Drake",
+    embed: "https://open.spotify.com/embed/track/127QTOFJsJQp5LbJbu3A1y"
+  },
+  {
+    title: "Somebody to Love (Remix) (part. USHER)",
+    artist: "Justin Bieber",
+    embed: "https://open.spotify.com/embed/track/7IUl5c6u18rzmyQOblj10T"
+  },
+  {
+    title: "HIGHEST IN THE ROOM",
+    artist: "Travis Scott",
+    embed: "https://open.spotify.com/embed/track/3eekarcy7kvN4yt5ZFzltW"
+  },
+  {
+    title: "Danza Kuduro (part. Lucenzo)",
+    artist: "Don Omar",
+    embed: "https://open.spotify.com/embed/track/2a1o6ZejUi8U3wzzOtCOYw"
+  },
+  {
+    title: "Faço Chover (It Will Rain)",
+    artist: "Calcinha Preta",
+    embed: "https://open.spotify.com/embed/track/1qamKCfDlcPV44niEiQsOa"
+  },
+  {
+    title: "DtMF",
+    artist: "Bad Bunny",
+    embed: "https://open.spotify.com/embed/track/3sK8wGT43QFpWrvNQsrQya"
+  },
+  {
+    title: "Never Say Never (part. Jaden)",
+    artist: "Justin Bieber",
+    embed: "https://open.spotify.com/embed/track/5GYbkDveRD2I8M5ZJ14hWn"
+  },
+  {
+    title: "Umbrella",
+    artist: "Rihanna",
+    embed: "https://open.spotify.com/embed/track/49FYlytm3dAAraYgpoJZux"
+  },
+  {
+    title: "Congratulations (part. Quavo)",
+    artist: "Post Malone",
+    embed: "https://open.spotify.com/embed/track/3a1lNhkSLSkpJE4MSHpDu9"
+  },
+  {
+    title: "Dangerous (part. Akon)",
+    artist: "Kardinal Offishall",
+    embed: "https://open.spotify.com/embed/track/4NOZ35Dhucr6UlVyLOtktd"
+  },
+  {
+    title: "goosebumps ",
+    artist: "Travis Scott",
+    embed: "https://open.spotify.com/embed/track/6gBFPUFcJLzWGx4lenP6h2"
+  },
+  {
+    title: "God's Plan",
+    artist: "Drake",
+    embed: "https://open.spotify.com/embed/track/6DCZcSspjsKoFjzjrWoCdn"
+  },
+  {
+    title: "Family Affair",
+    artist: "Mary J. Blige",
+    embed: "https://open.spotify.com/embed/track/3aw9iWUQ3VrPQltgwvN9Xu"
+  },
+  {
     title: "Bolha do Catucadão",
     artist: "DJ DANN ORIGINAL, DJ Thseven7, Kaue Mc e Oliver MC",
     embed: "https://open.spotify.com/embed/track/6wg9oQ055KTynFmkqc05yS"
+  },
+  {
+    title: "Gimme That Remix (feat.lil`wayne)",
+    artist: "Chris Brown",
+    embed: "https://open.spotify.com/embed/track/2bIrFpyw3AA2t7gNIkfmGb"
+  },
+  {
+    title: "Billionaire (part. Bruno Mars)",
+    artist: "Travie McCoy",
+    embed: "https://open.spotify.com/embed/track/2M9ULmQwTaTGmAdXaXpfz5"
+  },
+  {
+    title: "Young, Wild & Free (part. Bruno Mars)",
+    artist: "Snoop Dogg e Wiz Khalifa",
+    embed: "https://open.spotify.com/embed/track/5HQVUIKwCEXpe7JIHyY734"
+  },
+   {
+    title: "Lembra Aquele Cara",
+    artist: "MC Menor MT, MC Pelourinho e DJ Kennedy OBraboo",
+    embed: "https://open.spotify.com/embed/track/4O4zPFoJ5HWnqbGYlCA2qc"
+  },
+   {
+    title: "CORNETADA",
+    artist: "DJ BRUNINHO 17 e Mc Neguinho do Morro",
+    embed: "https://open.spotify.com/embed/track/2VPM3kwqzkSUwKHdTS140h"
+  },
+   {
+    title: "Pikezin do M.J",
+    artist: "DJ Silva 07, NavasMC Oficial e Miury Dj",
+    embed: "https://open.spotify.com/embed/track/2nzXwfnAPFVlLLpYtDQXmd"
+  },
+   {
+    title: "Ela ké Leitada",
+    artist: "Prod.Nifour, Mc Gw, Cacau Chuu e Storys Funk",
+    embed: "https://open.spotify.com/embed/track/161dJFOgyuYcgKg0AzYuAh"
+  },
+  {
+    title: "JETSKI",
+    artist: "Pedro Sampaio, Melody e MC Meno K",
+    embed: "https://open.spotify.com/embed/track/3jhyw60F61gc7nC4dblqtC"
+   },
+   {
+    title: "FAMOSINHA",
+    artist: "Dj Caio Vieira, Mc Rodrigo do CN e MC Meno K",
+    embed: "https://open.spotify.com/embed/track/5Nj2UVsxXAvhfYNpcre3al"
+  },
+   {
+    title: "É o Antares Melhor Baile da Cidade",
+    artist: "Dj Wendel Czr, MC Flavinho e MC MOLEQUINHO",
+    embed: "https://open.spotify.com/embed/track/1wNTTADawAcKHRZ6R7GfnS"
+  },
+   {
+    title: "P do Pecado",
+    artist: "Grupo Menos É Mais e Simone Mendes",
+    embed: "https://open.spotify.com/embed/track/38Ps9Kui6qJjpVqdBOfN5M"
+   },
+   {
+    title: "THE BOX MEDLEY 6",
+    artist: "THE BOX, Raffé, tchelo rodrigues, TOKIODK e Lipinho Oficial",
+    embed: "https://open.spotify.com/embed/track/507tluWzOtxx58Kb13L9qu"
+  },
+   {
+    title: "Iphone Branco",
+    artist: "L3OZIN, Mainstreet e Borges",
+    embed: "https://open.spotify.com/embed/track/6jxE4XjFVSKF18kfo7FCl9"
+  },
+   {
+    title: "USD, é USD",
+    artist: "Kyan e Mu540",
+    embed: "https://open.spotify.com/embed/track/5cPsBPHjF8ZsI3qktGulWR"
   },
    {
     title: "Oh Garota Eu Quero Você Só Pra Mim",
