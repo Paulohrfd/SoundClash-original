@@ -134,7 +134,7 @@ const tracks = [
   {
     title: "Tipo Gin",
     artist: "Kevin O Chris",
-    embed: "https://open.spotify.com/embed/track/3Y1vV7Y2kZZgwyXR0YJIUK"
+    embed: "https://open.spotify.com/embed/track/4llr8mcoauwrHBtjGb7F9S"
   },
   {
     title: "Ela É do Tipo",
@@ -1070,6 +1070,7 @@ function render() {
 }
 
 render();
+
 
 
 
