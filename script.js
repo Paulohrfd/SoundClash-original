@@ -1213,6 +1213,7 @@ function renderBattleScreen() {
 
   ${renderRankingBlock()}
 `;
+}
 
     <div class="battle-grid">
       <div class="card">
@@ -1267,6 +1268,7 @@ function render() {
 }
 
 render();
+
 
 
 
