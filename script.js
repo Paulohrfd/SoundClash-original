@@ -870,6 +870,7 @@ function startGame() {
   const cleanTracks = uniqueTracks(tracks);
   currentRound = shuffle([...cleanTracks]).slice(0, 128);
 
+  render() {
 
 }
   
@@ -1068,6 +1069,7 @@ function shareChampion() {
   
 }
 render();
+
 
 
 
