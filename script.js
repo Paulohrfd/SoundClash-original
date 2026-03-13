@@ -869,6 +869,8 @@ function startGame() {
   const cleanTracks = uniqueTracks(tracks);
   currentRound = shuffle([...cleanTracks]).slice(0, 128);
 
+  <button class="main-btn" onclick="shareChampion()">COMPARTILHAR RESULTADO</button>
+
   render();
 }
 
@@ -885,6 +887,12 @@ function chooseTrack(track) {
     render();
     return;
   }
+  
+
+  navigator.clipboard.writeText(`${text}\n${window.location.href}`)
+    .then(() => alert("Resultado copiado para compartilhar!"))
+    .catch(() => alert(text));
+}
   
 
  if (nextRound.length === 1) {
@@ -904,17 +912,6 @@ function chooseTrackByIndex(index) {
   chooseTrack(currentRound[index]);
 }
 
-function shareChampion() {
-  if (!champion) return;
-
-  const text = `🎵 Minha campeã no SoundClash foi: ${champion.title} — ${champion.artist}`;
-
-  if (navigator.share) {
-    navigator.share({
-      title: "SoundClash",
-      text
-    }).catch(() => {});
-    return;
   }
 
   navigator.clipboard.writeText(text)
@@ -1072,6 +1069,22 @@ function render() {
 render();
 
 
+function shareChampion() {
+  if (!champion) return;
+
+  const text = `🎵 Minha campeã no SoundClash foi: ${champion.title} — ${champion.artist}`;
+
+  if (navigator.share) {
+    navigator.share({
+      title: "SoundClash",
+      text: text,
+      url: window.location.href
+    });
+  } else {
+    navigator.clipboard.writeText(text + " " + window.location.href);
+    alert("Resultado copiado para compartilhar!");
+  }
+}
 
 
 
