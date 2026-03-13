@@ -464,46 +464,50 @@ font-size:15px;
 }
 
   }
-  .bracket{
-display:flex;
-justify-content:center;
-gap:24px;
-margin-top:20px;
+  .bracket {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+  align-items: start;
 }
 
-.col{
-display:flex;
-flex-direction:column;
-gap:12px;
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.col h4{
-font-size:14px;
-opacity:0.7;
-margin-bottom:8px;
-text-align:center;
+.col h4 {
+  font-size: 14px;
+  opacity: 0.75;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
-.match{
-background:rgba(255,255,255,0.05);
-padding:10px 14px;
-border-radius:10px;
-font-size:14px;
+.match {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  text-align: center;
 }
 
-.champion-name{
-background:linear-gradient(45deg,#7b4dff,#9c6bff);
-padding:14px 18px;
-border-radius:12px;
-font-weight:bold;
-font-size:16px;
-text-align:center;
+.champion-name {
+  background: linear-gradient(45deg,#7b4dff,#9c6bff);
+  padding: 14px 18px;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
 }
 
-.share-footer{
-margin-top:20px;
-opacity:0.7;
-text-align:center;
+.share-footer {
+  margin-top: 22px;
+  opacity: 0.75;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
 
