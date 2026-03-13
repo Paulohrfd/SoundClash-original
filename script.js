@@ -1080,7 +1080,6 @@ function render() {
   game.innerHTML = renderBattleScreen();
 }
 
-render();
 
 function shareChampion() {
   if (!champion) return;
@@ -1100,6 +1099,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
