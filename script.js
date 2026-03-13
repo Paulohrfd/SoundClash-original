@@ -921,7 +921,6 @@ function renderStartScreen() {
     <div class="start-screen">
       <h1 class="site-title">SoundClash</h1>
       <button class="main-btn" onclick="startGame()">COMEÇAR</button>
-      ${renderRankingBlock()}
     </div>
   `;
 }
@@ -1070,6 +1069,7 @@ function shareChampion() {
   
 }
 render();
+
 
 
 
