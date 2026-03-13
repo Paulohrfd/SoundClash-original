@@ -882,6 +882,7 @@ function restartGame() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 
+}
 
 function chooseTrack(track) {
  
@@ -1084,6 +1085,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
