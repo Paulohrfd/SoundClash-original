@@ -910,7 +910,7 @@ function chooseTrackByIndex(index) {
   chooseTrack(currentRound[index]);
 }
 
-  }  currentRound = nextRound;
+    currentRound = nextRound;
   nextRound = [];
   currentIndex = 0;
   render();
@@ -1083,6 +1083,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
