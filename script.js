@@ -903,19 +903,26 @@ function chooseTrack(track) {
   
 
 
-function chooseTrackByIndex(index) {
-  chooseTrack(currentRound[index]);
-}
+function chooseTrack(track) {
+  nextRound.push(track);
+  currentIndex += 2;
 
-    currentRound = nextRound;
+  if (currentIndex < currentRound.length) {
+    render();
+    return;
+  } 
+  
+  if (nextRound.length === 1) {
+  champion = nextRound[0];
+  saveChampion(champion);
+  render();
+  return;
+  }
+  
+   currentRound = nextRound;
   nextRound = [];
   currentIndex = 0;
   render();
-
-  navigator.clipboard.writeText(text)
-    .then(() => alert("Resultado copiado para a área de transferência!"))
-    .catch(() => alert(text));
-
 }
 
 function renderRankingBlock() {
@@ -1081,6 +1088,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
