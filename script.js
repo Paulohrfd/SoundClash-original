@@ -1211,7 +1211,6 @@ function renderBattleScreen() {
 
 
     <div class="battle-grid">
-     ${renderRankingBlock()}
       <div class="card">
         <h2>${left.title}</h2>
         <p>${left.artist}</p>
@@ -1244,6 +1243,7 @@ function renderBattleScreen() {
         <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex + 1})">ESCOLHER</button>
       </div>
     </div>
+    ${renderRankingBlock()}
   `;
 }
 
@@ -1264,6 +1264,7 @@ function render() {
 }
 
 render();
+
 
 
 
