@@ -918,7 +918,7 @@ function chooseTrackByIndex(index) {
   navigator.clipboard.writeText(text)
     .then(() => alert("Resultado copiado para a área de transferência!"))
     .catch(() => alert(text));
-}
+
 
 function renderRankingBlock() {
   const { totalVotes, ranking } = getRanking();
@@ -1083,6 +1083,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
