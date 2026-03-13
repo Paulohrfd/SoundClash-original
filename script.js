@@ -801,7 +801,6 @@ function uniqueTracks(list) {
   const seen = new Set();
 
   return list.filter(track => {
-    const key = ${track.title}__${track.artist}.toLowerCase();
     const key = `${track.title}__${track.artist}`.toLowerCase();
     if (seen.has(key)) return false;
     seen.add(key);
@@ -823,7 +822,6 @@ function loadChampions() {
 
 function saveChampion(track) {
   const data = loadChampions();
-  const key = ${track.title}__${track.artist};
   const key = `${track.title}__${track.artist}`;
 
   if (!data[key]) {
@@ -858,7 +856,9 @@ function renderRankingBlock() {
   const { totalChampionships, ranking } = getRanking();
 
   const items = ranking.length
-    ? ranking.map((item, index) => `
+    ? ranking
+        .map(
+          (item, index) => `
         <li class="ranking-item">
           <span class="ranking-pos">#${index + 1}</span>
           <div class="ranking-info">
@@ -867,8 +867,9 @@ function renderRankingBlock() {
           </div>
           <span class="ranking-wins">${item.wins} copas</span>
         </li>
-      `).join("")
-    : <li class="ranking-empty">Ainda não há campeãs registradas.</li>;
+      `
+        )
+        .join("")
     : `<li class="ranking-empty">Ainda não há campeãs registradas.</li>`;
 
   return `
@@ -889,17 +890,40 @@ function renderStartScreen() {
     <div class="start-screen">
       <h1 class="site-title">SoundClash</h1>
       <button class="main-btn" onclick="startGame()">COMEÇAR</button>
+      ${renderRankingBlock()}
     </div>
   `;
 }
 
 function renderLoadingScreen() {
   return `
-@@ -915,51 +915,51 @@ function renderWinnerScreen() {
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy">
-            </iframe>
-          </div>
+    <div class="start-screen">
+      <h1 class="site-title">SoundClash</h1>
+      <p class="winner-title">${loadingText || "Carregando..."}</p>
+    </div>
+  `;
+}
+
+function renderWinnerScreen() {
+  return `
+    <div class="winner-screen">
+      <p class="winner-title">CAMPEÃ DA COPA</p>
+      <h2 class="winner-song">${champion.title}</h2>
+      <p class="winner-artist">${champion.artist}</p>
+
+      <div class="share-card">
+        <p class="winner-title">🏆 CAMPEÃ SOUNDCLASH</p>
+        <h3 class="winner-song">${champion.title}</h3>
+        <p class="winner-artist">${champion.artist}</p>
+
+        <div class="player">
+          <iframe
+            src="${champion.embed}"
+            width="100%"
+            height="152"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
         </div>
 
         <p class="share-footer">SoundClash</p>
@@ -921,7 +945,6 @@ function renderBattleScreen() {
   const right = currentRound[currentIndex + 1];
   const duel = Math.floor(currentIndex / 2) + 1;
   const totalDuels = currentRound.length / 2;
-  const phase = roundNames[currentRound.length] || ${currentRound.length / 2} confrontos;
   const phase = roundNames[currentRound.length] || `${currentRound.length / 2} confrontos`;
 
   return `
@@ -948,8 +971,104 @@ function renderBattleScreen() {
 
         <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex})">ESCOLHER</button>
       </div>
-@@ -1053,58 +1053,58 @@ function chooseTrack(winner) {
-  }, 900);
+
+      <div class="vs">VS</div>
+
+      <div class="card">
+        <h2>${right.title}</h2>
+        <p>${right.artist}</p>
+
+        <div class="player">
+          <iframe
+            src="${right.embed}"
+            width="100%"
+            height="152"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex + 1})">ESCOLHER</button>
+      </div>
+    </div>
+  `;
+}
+
+function render() {
+  const game = document.getElementById("game");
+  if (!game) return;
+
+  if (!started) {
+    game.innerHTML = renderStartScreen();
+    return;
+  }
+
+  if (loadingPhase) {
+    game.innerHTML = renderLoadingScreen();
+    return;
+  }
+
+  if (champion) {
+    game.innerHTML = renderWinnerScreen();
+    return;
+  }
+
+  game.innerHTML = renderBattleScreen();
+}
+
+function setLoading(text, delay = 900) {
+  loadingText = text;
+  loadingPhase = true;
+  render();
+
+  return new Promise(resolve => {
+    setTimeout(() => {
+      loadingPhase = false;
+      loadingText = "";
+      resolve();
+    }, delay);
+  });
+}
+
+function startGame() {
+  const shuffled = uniqueTracks(shuffle(tracks));
+  const bracketSize = 2 ** Math.floor(Math.log2(shuffled.length));
+
+  started = true;
+  currentRound = shuffled.slice(0, bracketSize);
+  nextRound = [];
+  currentIndex = 0;
+  champion = null;
+  loadingPhase = false;
+  loadingText = "";
+
+  render();
+}
+
+async function chooseTrack(winner) {
+  nextRound.push(winner);
+  currentIndex += 2;
+
+  if (currentIndex < currentRound.length) {
+    render();
+    return;
+  }
+
+  if (nextRound.length === 1) {
+    champion = nextRound[0];
+    saveChampion(champion);
+    nextRound = [];
+    await setLoading("Finalizando resultado...");
+    render();
+    return;
+  }
+
+  await setLoading("Preparando próxima fase...");
+
+  currentRound = [...nextRound];
+  nextRound = [];
+  currentIndex = 0;
+  render();
 }
 
 function chooseTrackByIndex(index) {
@@ -974,7 +1093,6 @@ async function downloadChampionImage() {
 
   const link = document.createElement("a");
   link.href = dataUrl;
-  link.download = soundclash-${champion.title}.png;
   link.download = `soundclash-${champion.title}.png`;
   link.click();
 }
@@ -982,7 +1100,6 @@ async function downloadChampionImage() {
 async function shareChampion() {
   if (!champion) return;
 
-  const text = 🎵 Minha campeã no SoundClash foi: ${champion.title} - ${champion.artist};
   const text = `🎵 Minha campeã no SoundClash foi: ${champion.title} - ${champion.artist}`;
   const dataUrl = await generateChampionImage();
 
@@ -996,15 +1113,20 @@ async function shareChampion() {
   const file = new File([blob], "soundclash-campea.png", { type: "image/png" });
 
   if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
-    navigator.share({
-      title: "SoundClash",
-      text,
-      files: [file]
-    }).catch(() => {});
+    navigator
+      .share({
+        title: "SoundClash",
+        text,
+        files: [file]
+      })
+      .catch(() => {});
     return;
   }
 
   const link = document.createElement("a");
   link.href = dataUrl;
-  link.download = "soundclash-campea.png";link.click();
+  link.download = "soundclash-campea.png";
+  link.click();
 }
+
+render();
