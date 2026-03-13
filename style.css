@@ -528,10 +528,35 @@ box-shadow:0 10px 25px rgba(123,77,255,0.4);
 }
 
 .bracket-board {
-display: grid;
-grid-template-columns: 1.2fr 1fr 0.9fr 1.2fr;
-gap: 26px;
-align-items: center;
+display:flex;
+flex-direction:column;
+gap:28px;
+}
+  @media (min-width:900px){
+
+.bracket-board{
+display:grid;
+grid-template-columns:1.2fr 1fr 0.9fr 1.2fr;
+gap:26px;
+align-items:center;
+}
+
+.quarter-col{
+padding-top:0;
+}
+
+.semi-col{
+padding-top:40px;
+}
+
+.final-col{
+padding-top:80px;
+}
+
+.champion-col{
+padding-top:80px;
+}
+
 }
 
 .bracket-col {
