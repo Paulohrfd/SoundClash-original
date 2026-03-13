@@ -895,24 +895,32 @@ function renderStartScreen() {
 function renderWinnerScreen() {
   return `
     <div class="winner-screen">
-      <p class="winner-title">CAMPEÃ DA SUA COPA</p>
-      <h2 class="winner-song">${champion.title}</h2>
-      <p class="winner-artist">${champion.artist}</p>
+      <div class="share-card">
+        <p class="winner-title">CAMPEÃ DA SUA COPA</p>
+        <h2 class="winner-song">${champion.title}</h2>
+        <p class="winner-artist">${champion.artist}</p>
 
-      <div class="card" style="max-width:700px; width:100%;">
-        <div class="player">
-          <iframe
-            src="${champion.embed}"
-            width="100%"
-            height="152"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy">
-          </iframe>
+        <div class="card" style="max-width:700px; width:100%;">
+          <div class="player">
+            <iframe
+              src="${champion.embed}"
+              width="100%"
+              height="152"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+          </div>
         </div>
+
+        <p class="share-footer">SoundClash</p>
       </div>
 
-      <button class="main-btn" onclick="startGame()">NOVA COPA</button>
-      
+      <div class="winner-actions">
+        <button class="main-btn" onclick="shareChampion()">COMPARTILHAR RESULTADO</button>
+        <button class="main-btn" onclick="downloadChampionImage()">BAIXAR IMAGEM</button>
+        <button class="main-btn" onclick="startGame()">NOVA COPA</button>
+      </div>
+
       ${renderRankingBlock()}
     </div>
   `;
@@ -923,6 +931,57 @@ function renderLoadingScreen() {
       <h1 class="site-title">${loadingText}</h1>
     </div>
   `;
+}
+async function generateChampionImage() {
+  const card = document.querySelector(".share-card");
+  if (!card) return null;
+
+  const canvas = await html2canvas(card, {
+    backgroundColor: null,
+    scale: 2
+  });
+
+  return canvas.toDataURL("image/png");
+}
+
+async function downloadChampionImage() {
+  const dataUrl = await generateChampionImage();
+  if (!dataUrl || !champion) return;
+
+  const link = document.createElement("a");
+  link.href = dataUrl;
+  link.download = `soundclash-${champion.title}.png`;
+  link.click();
+}
+
+async function shareChampion() {
+  if (!champion) return;
+
+  const text = `🎵 Minha campeã no SoundClash foi: ${champion.title} - ${champion.artist}`;
+  const dataUrl = await generateChampionImage();
+
+  if (!dataUrl) {
+    alert("Não foi possível gerar a imagem.");
+    return;
+  }
+
+  const response = await fetch(dataUrl);
+  const blob = await response.blob();
+  const file = new File([blob], "soundclash-campea.png", { type: "image/png" });
+
+  if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+    navigator.share({
+      title: "SoundClash",
+      text,
+      files: [file]
+    }).catch(() => {});
+    return;
+  }
+
+  const link = document.createElement("a");
+  link.href = dataUrl;
+  link.download = "soundclash-campea.png";
+  link.click();
 }
 function render() {
   const game = document.getElementById("game");
@@ -1075,6 +1134,7 @@ function chooseTrackByIndex(index) {
 }
 
 render();
+
 
 
 
