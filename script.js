@@ -1209,9 +1209,9 @@ function renderBattleScreen() {
       <button class="main-btn" onclick="restartGame()">REINICIAR</button>
     </div>
 
-    ${renderRankingBlock()}
 
     <div class="battle-grid">
+     ${renderRankingBlock()}
       <div class="card">
         <h2>${left.title}</h2>
         <p>${left.artist}</p>
@@ -1264,6 +1264,7 @@ function render() {
 }
 
 render();
+
 
 
 
