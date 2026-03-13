@@ -1073,7 +1073,7 @@ function renderRankingBlock() {
       `
         )
         .join("")
-    : `<li class="ranking-empty">Ainda não há campeãs registradas.</li>`;
+    : `<li class="ranking-empty">Ainda não há campeões registradas.</li>`;
 
   return `
     <div class="ranking-box">
@@ -1116,12 +1116,12 @@ function renderLoadingScreen() {
 function renderWinnerScreen() {
   return `
     <div class="winner-screen">
-      <p class="winner-title">CAMPEÃ DA COPA</p>
+      <p class="winner-title">CAMPEÃO DA COPA</p>
       <h2 class="winner-song">${champion.title}</h2>
       <p class="winner-artist">${champion.artist}</p>
 
       <div class="share-card">
-        <p class="winner-title">🏆 CAMPEÃ SOUNDCLASH</p>
+        <p class="winner-title">🏆 CAMPEÃO SOUNDCLASH</p>
         <h3 class="winner-song">${champion.title}</h3>
         <p class="winner-artist">${champion.artist}</p>
 
@@ -1312,7 +1312,7 @@ async function downloadChampionImage() {
 async function shareChampion() {
   if (!champion) return;
 
-  const text = `🎵 Minha campeã no SoundClash foi: ${champion.title} - ${champion.artist}`;
+  const text = `🎵 Meu campeão no SoundClash foi: ${champion.title} - ${champion.artist}`;
   const dataUrl = await generateChampionImage();
 
   if (!dataUrl) {
@@ -1322,7 +1322,7 @@ async function shareChampion() {
 
   const response = await fetch(dataUrl);
   const blob = await response.blob();
-  const file = new File([blob], "soundclash-campea.png", { type: "image/png" });
+  const file = new File([blob], "soundclasho-campea.png", { type: "image/png" });
 
   if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
     navigator
@@ -1337,7 +1337,7 @@ async function shareChampion() {
 
   const link = document.createElement("a");
   link.href = dataUrl;
-  link.download = "soundclash-campea.png";
+  link.download = "soundclash-campeao.png";
   link.click();
 }
 
