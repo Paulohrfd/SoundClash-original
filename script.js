@@ -906,8 +906,6 @@ function chooseTrack(track) {
   
 
 
-}
-
 function chooseTrackByIndex(index) {
   chooseTrack(currentRound[index]);
 }
@@ -1085,6 +1083,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
