@@ -801,7 +801,7 @@ function uniqueTracks(list) {
   const seen = new Set();
 
   return list.filter(track => {
-  const key = `${track.title}__${track.artist}`.toLowerCase();
+    const key = ${track.title}__${track.artist}.toLowerCase();
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
@@ -822,8 +822,8 @@ function loadChampions() {
 
 function saveChampion(track) {
   const data = loadChampions();
-const key = `${track.title}__${track.artist}`;
-  
+  const key = ${track.title}__${track.artist};
+
   if (!data[key]) {
     data[key] = {
       title: track.title,
@@ -835,6 +835,7 @@ const key = `${track.title}__${track.artist}`;
   data[key].wins += 1;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
 }
+
 
 function getRanking(limit = 5) {
   const data = loadChampions();
@@ -1108,6 +1109,7 @@ async function shareChampion() {
 }
 
 render();
+
 
 
 
