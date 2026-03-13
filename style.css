@@ -224,6 +224,7 @@ iframe {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 24px;
+  
 }
 
 .secondary-btn {
@@ -233,3 +234,4 @@ iframe {
 .secondary-btn:hover {
   background: #475569;
 }
+
