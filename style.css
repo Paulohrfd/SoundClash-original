@@ -411,6 +411,29 @@ border-radius:14px;
 }
 
 }
+  @media (max-width:600px){
+
+.main-btn{
+font-size:16px;
+padding:14px;
+}
+
+}
+  @media (max-width:600px){
+
+.card{
+padding:18px;
+}
+
+.card h2{
+font-size:20px;
+}
+
+.card p{
+font-size:15px;
+}
+
+}
 
 
 
