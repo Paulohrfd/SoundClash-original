@@ -871,10 +871,8 @@ function startGame() {
 
 
   render();
-}
 
-function restartGame() {
-  startGame(); 
+
 
 }
 
@@ -1046,6 +1044,11 @@ function render() {
 
   game.innerHTML = renderBattleScreen();
 }
+
+function restartGame() {
+  startGame(); 
+}
+
 function chooseTrack(track) {
   nextRound.push(track);
   currentIndex += 2;
@@ -1090,6 +1093,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
