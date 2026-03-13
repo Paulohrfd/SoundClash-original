@@ -778,6 +778,13 @@ function getRanking(limit = 5) {
     totalVotes: stats.totalVotes,
     ranking
   };
+  function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 }
 
 function startGame() {
@@ -785,7 +792,7 @@ function startGame() {
   champion = null;
   nextRound = [];
   currentIndex = 0;
-  currentRound = shuffle(tracks);
+ currentRound = shuffle([...tracks]);
   render();
 }
 
@@ -975,6 +982,7 @@ function render() {
 }
 
 render();
+
 
 
 
