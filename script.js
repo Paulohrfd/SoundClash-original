@@ -1274,9 +1274,9 @@ async function chooseTrack(winner) {
 
   await setLoading("Preparando próxima fase...");
 
-  currentRound = [...nextRound];
-  nextRound = [];
-  currentIndex = 0;
+  currentRound = shuffle([...nextRound]);
+nextRound = [];
+currentIndex = 0;
   render();
 }
 
