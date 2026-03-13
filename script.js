@@ -914,70 +914,7 @@ function renderWinnerScreen() {
     </div>
   `;
 }
-const STORAGE_KEY = "soundclash_champions_v1";
 
-function loadChampions() {
-  const raw = localStorage.getItem(STORAGE_KEY);
-
-  if (!raw) return {};
-
-  try {
-    return JSON.parse(raw);
-  } catch {
-    return {};
-  }
-}
-
-function saveChampion(track) {
-  const data = loadChampions();
-  const key = `${track.title}__${track.artist}`;
-
-  if (!data[key]) {
-    data[key] = {
-      title: track.title,
-      artist: track.artist,
-      wins: 0
-    };
-  }
-
-  data[key].wins += 1;
-
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-}
-
-function getRanking(limit = 5) {
-  const data = loadChampions();
-
-  const ranking = Object.values(data)
-    .sort((a, b) => b.wins - a.wins)
-    .slice(0, limit);
-
-  return ranking;
-}
-function renderRankingBlock() {
-
-  const ranking = getRanking();
-
-  const items = ranking.length
-    ? ranking.map((item, index) => `
-      <li class="ranking-item">
-        <span>#${index + 1}</span>
-        <strong>${item.title}</strong>
-        <span>${item.artist}</span>
-        <span>${item.wins} copas</span>
-      </li>
-    `).join("")
-    : `<li>Nenhuma campeã ainda</li>`;
-
-  return `
-  <div class="ranking-box">
-    <h3>Ranking Global</h3>
-    <ul class="ranking-list">
-      ${items}
-    </ul>
-  </div>
-  `;
-}
 
 function renderBattleScreen() {
   const left = currentRound[currentIndex];
@@ -1092,4 +1029,5 @@ function chooseTrackByIndex(index) {
 }
 
 render();
+
 
