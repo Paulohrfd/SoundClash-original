@@ -902,6 +902,7 @@ function renderWinnerScreen() {
           </iframe>
         </div>
       </div>
+      <button class="main-btn" onclick="startGame()">NOVA COPA</button>
 
       <div class="winner-actions">
         <button class="main-btn" onclick="shareChampion()">COMPARTILHAR MINHA CAMPEÃ</button>
@@ -982,6 +983,7 @@ function render() {
 }
 
 render();
+
 
 
 
