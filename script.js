@@ -691,6 +691,287 @@ embed:"https://open.spotify.com/embed/track/1JSTJqkT5qHq8MDJnJbRE1"
 title:"Message In A Bottle",
 artist:"The Police",
 embed:"https://open.spotify.com/embed/track/1oYYd2gnWZYrt89EBXdFiO"
+},
+  {
+title:"Evidências",
+artist:"Chitãozinho & Xororó",
+embed:"https://open.spotify.com/embed/track/4eVkn18rNf3pVqPpXgT5hT"
+},
+
+{
+title:"Ai Se Eu Te Pego",
+artist:"Michel Teló",
+embed:"https://open.spotify.com/embed/track/3U4isOIWM3VvDubwSI3y7a"
+},
+
+{
+title:"Show das Poderosas",
+artist:"Anitta",
+embed:"https://open.spotify.com/embed/track/1yqE5c7YVf1b6FvZ9oP0Ts"
+},
+
+{
+title:"Anna Julia",
+artist:"Los Hermanos",
+embed:"https://open.spotify.com/embed/track/3Vh0fZC0X8O2R1qNbfOjWJ"
+},
+
+{
+title:"Tempo Perdido",
+artist:"Legião Urbana",
+embed:"https://open.spotify.com/embed/track/2V4bv1fNWfTcyRJKmej6Sj"
+},
+
+{
+title:"Pais e Filhos",
+artist:"Legião Urbana",
+embed:"https://open.spotify.com/embed/track/5K7AMlpc4796JRWXb26nCV"
+},
+
+{
+title:"Será",
+artist:"Legião Urbana",
+embed:"https://open.spotify.com/embed/track/3B5n1mXbZ1h2LkU8nyJlcQ"
+},
+
+{
+title:"Primeiros Erros",
+artist:"Capital Inicial",
+embed:"https://open.spotify.com/embed/track/3mA5tS3kC0vE8m9H0N7C9y"
+},
+
+{
+title:"Natasha",
+artist:"Capital Inicial",
+embed:"https://open.spotify.com/embed/track/6Lh0QlgP6tI9n7vQh5v0kV"
+},
+
+{
+title:"Eduardo e Mônica",
+artist:"Legião Urbana",
+embed:"https://open.spotify.com/embed/track/3ZFTkvIE7kyPt6Nu3PEa7V"
+},
+
+{
+title:"Garota de Ipanema",
+artist:"Tom Jobim",
+embed:"https://open.spotify.com/embed/track/3YRCqOhFifThpSRFJ1VWFM"
+},
+
+{
+title:"Mas Que Nada",
+artist:"Jorge Ben Jor",
+embed:"https://open.spotify.com/embed/track/6M4bq0yE6W8Jk6aJjR0p9Y"
+},
+
+{
+title:"País Tropical",
+artist:"Jorge Ben Jor",
+embed:"https://open.spotify.com/embed/track/2n1sK5p1oX2q3C8V3f6L0X"
+},
+
+{
+title:"Descobridor dos Sete Mares",
+artist:"Tim Maia",
+embed:"https://open.spotify.com/embed/track/4M9U0s9UQpC9U9U9L6F1o6"
+},
+
+{
+title:"Gostava Tanto de Você",
+artist:"Tim Maia",
+embed:"https://open.spotify.com/embed/track/1wqz8Y8T8nP2E7vZ1T9M2O"
+},
+
+{
+title:"Sossego",
+artist:"Tim Maia",
+embed:"https://open.spotify.com/embed/track/3S2Qv2pC4V3F4s8nV5X9g0"
+},
+
+{
+title:"Fácil",
+artist:"Jota Quest",
+embed:"https://open.spotify.com/embed/track/4QhJYyZ7x8kQ6Y8L2X5T3F"
+},
+
+{
+title:"Dias Melhores",
+artist:"Jota Quest",
+embed:"https://open.spotify.com/embed/track/6X7ZC0nX5E1p3Q6d8Y2U5A"
+},
+
+{
+title:"Na Sua Estante",
+artist:"Pitty",
+embed:"https://open.spotify.com/embed/track/4gMgiXfqyzZLMhsksGmbQV"
+},
+
+{
+title:"Me Adora",
+artist:"Pitty",
+embed:"https://open.spotify.com/embed/track/1s8tP3sC5J4rR1s6X7K9cY"
+},
+
+{
+title:"Admirável Chip Novo",
+artist:"Pitty",
+embed:"https://open.spotify.com/embed/track/5kG8d8H4r2K0s4Q1Y9d5H0"
+},
+
+{
+title:"Anna Júlia",
+artist:"Los Hermanos",
+embed:"https://open.spotify.com/embed/track/3Vh0fZC0X8O2R1qNbfOjWJ"
+},
+
+{
+title:"O Segundo Sol",
+artist:"Cássia Eller",
+embed:"https://open.spotify.com/embed/track/3E8xYyZ7k9P1s4V2N6X0Y5"
+},
+
+{
+title:"Malandragem",
+artist:"Cássia Eller",
+embed:"https://open.spotify.com/embed/track/5nPOMkX9U4F1J6k7T2B3G0"
+},
+
+{
+title:"Por Enquanto",
+artist:"Cássia Eller",
+embed:"https://open.spotify.com/embed/track/1s7Xk9Q0L4D2M6P7T8H3F1"
+},
+
+{
+title:"Metamorfose Ambulante",
+artist:"Raul Seixas",
+embed:"https://open.spotify.com/embed/track/6u6pKX3M7P1D2S8Y5T9R0J"
+},
+
+{
+title:"Maluco Beleza",
+artist:"Raul Seixas",
+embed:"https://open.spotify.com/embed/track/5R1L6T3X9D2F4M7S8Q0N1B"
+},
+
+{
+title:"Tente Outra Vez",
+artist:"Raul Seixas",
+embed:"https://open.spotify.com/embed/track/4M6Y7X1T3P2S8F9D5K0B4C"
+},
+
+{
+title:"Tempo Perdido",
+artist:"Legião Urbana",
+embed:"https://open.spotify.com/embed/track/2V4bv1fNWfTcyRJKmej6Sj"
+},
+
+{
+title:"Meu Erro",
+artist:"Os Paralamas do Sucesso",
+embed:"https://open.spotify.com/embed/track/5Y3W1V9X7K6M2D0B8T4F6N"
+},
+
+{
+title:"Lanterna dos Afogados",
+artist:"Os Paralamas do Sucesso",
+embed:"https://open.spotify.com/embed/track/1F4S0M7P2X8D6T3Y9B5C1L"
+},
+
+{
+title:"Aonde Quer Que Eu Vá",
+artist:"Os Paralamas do Sucesso",
+embed:"https://open.spotify.com/embed/track/4M3X1T9F6P7D8Y2B0S5N6K"
+},
+
+{
+title:"Pro Dia Nascer Feliz",
+artist:"Barão Vermelho",
+embed:"https://open.spotify.com/embed/track/3K8F7Y1X5T2P6D4S9M0B3L"
+},
+
+{
+title:"Bete Balanço",
+artist:"Barão Vermelho",
+embed:"https://open.spotify.com/embed/track/6M1X8T4D9P3Y7F2S5K0N6C"
+},
+
+{
+title:"Exagerado",
+artist:"Cazuza",
+embed:"https://open.spotify.com/embed/track/6zL3A6u2v1s9G0k1pX3T8Y"
+},
+
+{
+title:"Codinome Beija-Flor",
+artist:"Cazuza",
+embed:"https://open.spotify.com/embed/track/4T3X2P7D9M5S8F1K6B0Y3C"
+},
+
+{
+title:"O Tempo Não Para",
+artist:"Cazuza",
+embed:"https://open.spotify.com/embed/track/5M9T7D1P3F8S6K0X4Y2B1C"
+},
+
+{
+title:"Anna Julia",
+artist:"Los Hermanos",
+embed:"https://open.spotify.com/embed/track/3Vh0fZC0X8O2R1qNbfOjWJ"
+},
+
+{
+title:"Velha Infância",
+artist:"Tribalistas",
+embed:"https://open.spotify.com/embed/track/6D7D5Z8H9K3F1T2M0S4B6Y"
+},
+
+{
+title:"Já Sei Namorar",
+artist:"Tribalistas",
+embed:"https://open.spotify.com/embed/track/4X8D6T2M1S7P9F0Y3K5B4C"
+},
+
+{
+title:"Anna Julia",
+artist:"Los Hermanos",
+embed:"https://open.spotify.com/embed/track/3Vh0fZC0X8O2R1qNbfOjWJ"
+},
+
+{
+title:"Faroeste Caboclo",
+artist:"Legião Urbana",
+embed:"https://open.spotify.com/embed/track/2o7V9R8F6S4P1K3D5Y0B2T"
+},
+
+{
+title:"O Vento",
+artist:"Los Hermanos",
+embed:"https://open.spotify.com/embed/track/5P8F6D4M3T1Y7K2S9B0X5C"
+},
+
+{
+title:"O Sol",
+artist:"Vitor Kley",
+embed:"https://open.spotify.com/embed/track/5k7M3T1S9F6Y2D4P0B8X5C"
+},
+
+{
+title:"Trem Bala",
+artist:"Ana Vilela",
+embed:"https://open.spotify.com/embed/track/4P3T1S8F6Y2D9M5K0B7X4C"
+},
+
+{
+title:"Pra Você Guardei o Amor",
+artist:"Nando Reis",
+embed:"https://open.spotify.com/embed/track/6D4M3T1Y7K2S9F0P8B5X4C"
+},
+
+{
+title:"Relicário",
+artist:"Nando Reis",
+embed:"https://open.spotify.com/embed/track/5S8F6Y2D4M3T1P9K0B7X4C"
 }
 ];
 
@@ -983,6 +1264,7 @@ function render() {
 }
 
 render();
+
 
 
 
