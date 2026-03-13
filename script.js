@@ -70,11 +70,7 @@ const tracks = [
     artist: "The Weeknd",
     embed: "https://open.spotify.com/embed/track/7MXVkk9YMctZqd1Srtv4MB"
   },
-  {
-    title: "Take On Me",
-    artist: "a-ha",
-    embed: "https://open.spotify.com/embed/track/2WfaOiMkCvy7F5fcp2zZ8L"
-  },
+  
   {
     title: "Bohemian Rhapsody",
     artist: "Queen",
@@ -563,11 +559,6 @@ artist:"a-ha",
 embed:"https://open.spotify.com/embed/track/2WfaOiMkCvy7F5fcp2zZ8L"
 },
 
-{
-title:"Seven Nation Army",
-artist:"The White Stripes",
-embed:"https://open.spotify.com/embed/track/3dPQuX8Gs42Y7b454ybpMR"
-},
 
 {
 title:"Under Pressure",
@@ -590,26 +581,9 @@ embed:"https://open.spotify.com/embed/track/1lCRw5FEZ1gPDNPzy1K4zW"
 {
 title:"Don't Stop Me Now",
 artist:"Queen",
-embed:"https://open.spotify.com/embed/track/5T8EDUDqKcs6OSOwEsfqG7"
+embed:"https://open.spotify.com/embed/track/7hQJA50XrCWABAu5v6QZ4i"
 },
 
-{
-title:"Take Me To Church",
-artist:"Hozier",
-embed:"https://open.spotify.com/embed/track/3dYD57lRAUcMHufyqn9GcI"
-},
-
-{
-title:"Counting Stars",
-artist:"OneRepublic",
-embed:"https://open.spotify.com/embed/track/2tpWsVSb9UEmDRxAl1zhX1"
-},
-
-{
-title:"Radioactive",
-artist:"Imagine Dragons",
-embed:"https://open.spotify.com/embed/track/62yJjFtgkhUrXktIoSjgP2"
-},
 
 {
 title:"Demons",
@@ -632,14 +606,9 @@ embed:"https://open.spotify.com/embed/track/22VdIZQfgXJea34mQxlt81"
 {
 title:"Save Your Tears",
 artist:"The Weeknd",
-embed:"https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b"
+embed:"https://open.spotify.com/embed/track/5QO79kh1waicV47BqGRL3g"
 },
 
-{
-title:"Blinding Lights",
-artist:"The Weeknd",
-embed:"https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b"
-},
 
 {
 title:"Uptown Funk",
@@ -688,6 +657,113 @@ title:"Message In A Bottle",
 artist:"The Police",
 embed:"https://open.spotify.com/embed/track/1oYYd2gnWZYrt89EBXdFiO"
 },
+  {
+title:"Lose Control",
+artist:"Teddy Swims",
+embed:"https://open.spotify.com/embed/track/6usohdchdzW9oML7VC4Uhk"
+},
+
+{
+title:"Flowers",
+artist:"Miley Cyrus",
+embed:"https://open.spotify.com/embed/track/0yLdNVWF3Srea0uzk55zFn"
+},
+
+{
+title:"Drivers License",
+artist:"Olivia Rodrigo",
+embed:"https://open.spotify.com/embed/track/5wANPM4fQCJwkGd4rN57mH"
+},
+
+{
+title:"Good 4 U",
+artist:"Olivia Rodrigo",
+embed:"https://open.spotify.com/embed/track/4ZtFanR9U6ndgddUvNcjcG"
+},
+
+{
+title:"Levitating",
+artist:"Dua Lipa",
+embed:"https://open.spotify.com/embed/track/463CkQjx2Zk1yXoBuierM9"
+},
+
+{
+title:"New Rules",
+artist:"Dua Lipa",
+embed:"https://open.spotify.com/embed/track/2ekn2ttSfGqwhhate0LSR0"
+},
+
+{
+title:"Stay",
+artist:"The Kid LAROI & Justin Bieber",
+embed:"https://open.spotify.com/embed/track/5HCyWlXZPP0y6Gqq8TgA20"
+},
+
+{
+title:"Peaches",
+artist:"Justin Bieber",
+embed:"https://open.spotify.com/embed/track/4iJyoBOLtHqaGxP12qzhQI"
+},
+
+{
+title:"Industry Baby",
+artist:"Lil Nas X",
+embed:"https://open.spotify.com/embed/track/27NovPIUIRrOZoCHxABJwK"
+},
+
+{
+title:"Old Town Road",
+artist:"Lil Nas X",
+embed:"https://open.spotify.com/embed/track/2YpeDb67231RjR0MgVLzsG"
+},
+
+{
+title:"Despacito",
+artist:"Luis Fonsi",
+embed:"https://open.spotify.com/embed/track/6habFhsOp2NvshLv26DqMb"
+},
+
+{
+title:"Shape of My Heart",
+artist:"Sting",
+embed:"https://open.spotify.com/embed/track/0FE9t6xYkqWXU2ahLh6D8X"
+},
+
+{
+title:"Counting Blue Cars",
+artist:"Dishwalla",
+embed:"https://open.spotify.com/embed/track/6pL8dHhE6UlyrA7DeF1CqG"
+},
+
+{
+title:"Take A Chance On Me",
+artist:"ABBA",
+embed:"https://open.spotify.com/embed/track/5pKJtX4w5jz6p4p9E0y9EY"
+},
+
+{
+title:"The Nights",
+artist:"Avicii",
+embed:"https://open.spotify.com/embed/track/0ct6r3EGTcMLPtrXHDvVjc"
+},
+
+{
+title:"Hey Ya!",
+artist:"OutKast",
+embed:"https://open.spotify.com/embed/track/3AszgPDZd9q0DpDFt4HFBy"
+},
+
+{
+title:"Crazy",
+artist:"Gnarls Barkley",
+embed:"https://open.spotify.com/embed/track/1vxw6aYJls2oq3gW0DujAo"
+},
+
+{
+title:"Feel It Still",
+artist:"Portugal. The Man",
+embed:"https://open.spotify.com/embed/track/6QgjcU0zLnzq5OrUoSZ3OK"
+}
 
 
 
@@ -997,6 +1073,7 @@ function render() {
 }
 
 render();
+
 
 
 
