@@ -391,8 +391,8 @@ iframe {
     font-size: 22px;
   }
  .logo {
-  width: 180px;
-  max-width: 70%;
+  width: 150px;
+  max-width: 65%;
 }
 
 @media (max-width:600px){
