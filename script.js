@@ -781,7 +781,49 @@ embed:"https://open.spotify.com/embed/track/1vxw6aYJls2oq3gW0DujAo"
 title:"Feel It Still",
 artist:"Portugal. The Man",
 embed:"https://open.spotify.com/embed/track/6QgjcU0zLnzq5OrUoSZ3OK"
-}
+},
+  
+{
+title: "YES OR NO",
+artist: "Teto",
+embed: "https://open.spotify.com/embed/track/7BGhllQfISbfkwYSkp5nRC"
+},
+  
+{
+title: "Talvez você precise de mim",
+artist: "Veigh",
+embed: "https://open.spotify.com/embed/track/2De1EHbIhepIVLHZ16bySE"
+},
+  
+{
+title: "Eyes Without A Face",
+artist: "Billy Idol",
+embed: "https://open.spotify.com/embed/track/0pUVeEgZuNyFzIMKp67RbS"
+},
+  
+{
+title: "High Hopes",
+artist: "Panic! At the Disco",
+embed: "https://open.spotify.com/embed/track/1rqqCSm0Qe4I9rUvWncaom"
+},
+  
+{
+title: "Flicker of Light",
+artist: "Lola Young",
+embed: "https://open.spotify.com/embed/track/3etbPFMXnAuShtcImz4UXW"
+},
+  
+{
+title: "Have You Ever Seen The Rain",
+artist: "Creedence Clearwater Revival",
+embed: "https://open.spotify.com/embed/track/2LawezPeJhN4AWuSB0GtAU"
+},
+  
+{
+title: "Party Rock Anthem",
+artist: "LMFAO",
+embed: "https://open.spotify.com/embed/track/7mitXLIMCflkhZiD34uEQI"
+},
 
 ];
 
