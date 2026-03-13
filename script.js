@@ -1123,7 +1123,7 @@ function renderWinnerScreen() {
           <iframe
             src="${champion.embed}"
             width="100%"
-            height="152"
+            height="120"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy">
           </iframe>
@@ -1166,7 +1166,7 @@ function renderBattleScreen() {
           <iframe
             src="${left.embed}"
             width="100%"
-            height="152"
+            height="120"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy">
           </iframe>
@@ -1185,7 +1185,7 @@ function renderBattleScreen() {
           <iframe
             src="${right.embed}"
             width="100%"
-            height="152"
+            height="120"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy">
           </iframe>
