@@ -802,6 +802,7 @@ function uniqueTracks(list) {
 
   return list.filter(track => {
     const key = ${track.title}__${track.artist}.toLowerCase();
+    const key = `${track.title}__${track.artist}`.toLowerCase();
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
@@ -823,6 +824,7 @@ function loadChampions() {
 function saveChampion(track) {
   const data = loadChampions();
   const key = ${track.title}__${track.artist};
+  const key = `${track.title}__${track.artist}`;
 
   if (!data[key]) {
     data[key] = {
@@ -867,6 +869,7 @@ function renderRankingBlock() {
         </li>
       `).join("")
     : <li class="ranking-empty">Ainda não há campeãs registradas.</li>;
+    : `<li class="ranking-empty">Ainda não há campeãs registradas.</li>`;
 
   return `
     <div class="ranking-box">
@@ -892,26 +895,7 @@ function renderStartScreen() {
 
 function renderLoadingScreen() {
   return `
-    <div class="start-screen">
-      <h1 class="site-title">${loadingText}</h1>
-    </div>
-  `;
-}
-
-function renderWinnerScreen() {
-  return `
-    <div class="winner-screen">
-      <div class="share-card">
-        <p class="winner-title">CAMPEÃ DA SUA COPA</p>
-        <h2 class="winner-song">${champion.title}</h2>
-        <p class="winner-artist">${champion.artist}</p>
-
-        <div class="card" style="max-width:700px; width:100%;">
-          <div class="player">
-            <iframe
-              src="${champion.embed}"
-              width="100%"
-              height="152"
+@@ -915,51 +915,51 @@ function renderWinnerScreen() {
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy">
             </iframe>
@@ -938,6 +922,7 @@ function renderBattleScreen() {
   const duel = Math.floor(currentIndex / 2) + 1;
   const totalDuels = currentRound.length / 2;
   const phase = roundNames[currentRound.length] || ${currentRound.length / 2} confrontos;
+  const phase = roundNames[currentRound.length] || `${currentRound.length / 2} confrontos`;
 
   return `
     <div class="topbar">
@@ -963,93 +948,7 @@ function renderBattleScreen() {
 
         <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex})">ESCOLHER</button>
       </div>
-
-      <div class="vs">ISSO OU AQUILO</div>
-
-      <div class="card">
-        <h2>${right.title}</h2>
-        <p>${right.artist}</p>
-
-        <div class="player">
-          <iframe
-            src="${right.embed}"
-            width="100%"
-            height="152"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy">
-          </iframe>
-        </div>
-
-        <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex + 1})">ESCOLHER</button>
-      </div>
-    </div>
-  `;
-}
-
-function render() {
-  const game = document.getElementById("game");
-  if (!game) return;
-
-  if (!started) {
-    game.innerHTML = renderStartScreen();
-    return;
-  }
-
-  if (loadingPhase) {
-    game.innerHTML = renderLoadingScreen();
-    return;
-  }
-
-  if (champion) {
-    game.innerHTML = renderWinnerScreen();
-    return;
-  }
-
-  game.innerHTML = renderBattleScreen();
-}
-
-function startGame() {
-  started = true;
-  champion = null;
-  currentIndex = 0;
-  nextRound = [];
-  loadingPhase = false;
-  loadingText = "";
-
-  const cleanTracks = uniqueTracks(tracks);
-  currentRound = shuffle(cleanTracks).slice(0, 128);
-
-  render();
-}
-
-function chooseTrack(winner) {
-  nextRound.push(winner);
-  currentIndex += 2;
-
-  if (currentIndex < currentRound.length) {
-    render();
-    return;
-  }
-
-  if (nextRound.length === 1) {
-    champion = nextRound[0];
-    saveChampion(champion);
-    render();
-    return;
-  }
-
-  currentRound = nextRound;
-  nextRound = [];
-  currentIndex = 0;
-
-  const nextPhase = roundNames[currentRound.length] || "Próxima fase";
-  loadingText = nextPhase;
-  loadingPhase = true;
-  render();
-
-  setTimeout(() => {
-    loadingPhase = false;
-    render();
+@@ -1053,58 +1053,58 @@ function chooseTrack(winner) {
   }, 900);
 }
 
@@ -1076,6 +975,7 @@ async function downloadChampionImage() {
   const link = document.createElement("a");
   link.href = dataUrl;
   link.download = soundclash-${champion.title}.png;
+  link.download = `soundclash-${champion.title}.png`;
   link.click();
 }
 
@@ -1083,6 +983,7 @@ async function shareChampion() {
   if (!champion) return;
 
   const text = 🎵 Minha campeã no SoundClash foi: ${champion.title} - ${champion.artist};
+  const text = `🎵 Minha campeã no SoundClash foi: ${champion.title} - ${champion.artist}`;
   const dataUrl = await generateChampionImage();
 
   if (!dataUrl) {
@@ -1107,12 +1008,3 @@ async function shareChampion() {
   link.href = dataUrl;
   link.download = "soundclash-campea.png";link.click();
 }
-
-render();
-
-
-
-
-
-
-
