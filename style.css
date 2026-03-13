@@ -434,6 +434,36 @@ font-size:15px;
 }
 
 }
+  @media (max-width:600px){
+
+.vs{
+  text-align:center;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:2px;
+  color:rgba(255,255,255,0.5);
+  margin:10px 0 18px;
+}
+
+}
+  @media (max-width:600px){
+
+.vs{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+}
+
+.vs::before,
+.vs::after{
+  content:"";
+  flex:1;
+  height:1px;
+  background:rgba(255,255,255,0.12);
+}
+
+}
 
 
 
