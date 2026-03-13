@@ -904,7 +904,7 @@ function chooseTrack(track) {
   champion = nextRound[0];
   saveChampion(champion);
   render();
-  return;
+  return
   }
 
   currentRound = nextRound;
@@ -1087,6 +1087,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
