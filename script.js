@@ -33,7 +33,7 @@ const tracks = [
   {
     title: "Midnight City",
     artist: "M83",
-    embed: "https://open.spotify.com/embed/track/3AhXZa8sUQht0UEdBJgpGc"
+    embed: "https://open.spotify.com/embed/track/6GyFP1nfCDB8lbD2bG0Hq9"
   },
   {
     title: "Shape of You",
@@ -144,7 +144,7 @@ const tracks = [
   {
     title: "Dias de Luta, Dias de Glória",
     artist: "Charlie Brown Jr.",
-    embed: "https://open.spotify.com/embed/track/0gplL1WMoJ6iYaPgMCL0gX"
+    embed: "https://open.spotify.com/embed/track/006pMMCuRo2TFjh8sNGSov"
   },
   {
     title: "Céu Azul",
@@ -229,7 +229,7 @@ const tracks = [
   {
     title: "Poker Face",
     artist: "Lady Gaga",
-    embed: "https://open.spotify.com/embed/track/6wVWJl64yoTzU27EI8ep20"
+    embed: "https://open.spotify.com/embed/track/1QV6tiMFM6fSOKOGLMHYYg"
   },
   {
     title: "Bad Romance",
@@ -460,7 +460,7 @@ embed:"https://open.spotify.com/embed/track/7iN1s7xHE4ifF5povM6A48"
 {
 title:"Hey Jude",
 artist:"The Beatles",
-embed:"https://open.spotify.com/embed/track/7pKfPomDEeI4TPT6EOYjn9"
+embed:"https://open.spotify.com/embed/track/1eT2CjXwFXNx6oY5ydvzKU"
 },
 
 {
@@ -496,7 +496,7 @@ embed:"https://open.spotify.com/embed/track/5ubvP9oKmxLUVq506fgLhk"
 {
 title:"September",
 artist:"Earth Wind & Fire",
-embed:"https://open.spotify.com/embed/track/3cHyrEgdyYRjgJKSOiOtcS"
+embed:"https://open.spotify.com/embed/track/2grjqo0Frpf2okIBiifQKs"
 },
 
 {
@@ -514,13 +514,13 @@ embed:"https://open.spotify.com/embed/track/3cfOd4CMv2snFaKAnMdnvK"
 {
 title:"Another Brick In The Wall",
 artist:"Pink Floyd",
-embed:"https://open.spotify.com/embed/track/0vFOzaXqZHahrZp6enQwQb"
+embed:"https://open.spotify.com/embed/track/7K6xMPtAjTuLPNlJMLf5bS"
 },
 
 {
 title:"Comfortably Numb",
 artist:"Pink Floyd",
-embed:"https://open.spotify.com/embed/track/6ZFbXIJkuI1dVNWvzJzown"
+embed:"https://open.spotify.com/embed/track/5HNCy40Ni5BZJFw1TKzRsC"
 },
 
 {
@@ -544,7 +544,7 @@ embed:"https://open.spotify.com/embed/track/5vHLwhxxlGzmClMcxRRFPr"
 {
 title:"Riptide",
 artist:"Vance Joy",
-embed:"https://open.spotify.com/embed/track/3J9LjYIuVq2M8o7rVd6c5U"
+embed:"https://open.spotify.com/embed/track/7yq4Qj7cqayVTp3FF9CWbm"
 },
 
 {
@@ -619,7 +619,7 @@ embed:"https://open.spotify.com/embed/track/32OlwWuMpZ6b0aN2RZOeMS"
 {
 title:"Just The Way You Are",
 artist:"Bruno Mars",
-embed:"https://open.spotify.com/embed/track/7BqHUALzNBTanL6OvsqmC1"
+embed:"https://open.spotify.com/embed/track/47Slg6LuqLaX0VodpSCvPt"
 },
 
 {
@@ -738,7 +738,7 @@ embed:"https://open.spotify.com/embed/track/6B618H5CuCdEzcVs0NKTlt"
 {
 title:"Take A Chance On Me",
 artist:"ABBA",
-embed:"https://open.spotify.com/embed/track/5pKJtX4w5jz6p4p9E0y9EY"
+embed:"https://open.spotify.com/embed/track/5BckPAYcKEJuYs1eV1BHHe"
 },
 
 {
@@ -1070,6 +1070,7 @@ function render() {
 }
 
 render();
+
 
 
 
