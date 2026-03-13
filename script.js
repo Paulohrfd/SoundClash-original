@@ -114,7 +114,7 @@ const tracks = [
   {
     title: "Envolver",
     artist: "Anitta",
-    embed: "https://open.spotify.com/embed/track/2qxmye6gAegTMjLKEBoR3d"
+    embed: "https://open.spotify.com/embed/track/3IAfUEeaXRX9s9UdKOJrFI"
   },
   {
     title: "Vai Malandra",
@@ -149,7 +149,7 @@ const tracks = [
   {
     title: "Céu Azul",
     artist: "Charlie Brown Jr.",
-    embed: "https://open.spotify.com/embed/track/6GmHnXy1p9N0UEhoJaMItZ"
+    embed: "https://open.spotify.com/embed/track/3cqeso9qMA6HoISorEoFfk"
   },
   {
     title: "Viva La Vida",
@@ -189,7 +189,7 @@ const tracks = [
   {
     title: "Happier",
     artist: "Marshmello",
-    embed: "https://open.spotify.com/embed/track/7BqBn9nzAq8spo5e7cZ0dJ"
+    embed: "https://open.spotify.com/embed/track/7BqHUALzNBTanL6OvsqmC1"
   },
   {
     title: "Sunflower",
@@ -484,7 +484,7 @@ embed:"https://open.spotify.com/embed/track/2bCQHF9gdG5BNDVuEIEnNk"
 {
 title:"Bad",
 artist:"Michael Jackson",
-embed:"https://open.spotify.com/embed/track/5T8EDUDqKcs6OSOwEsfqG7"
+embed:"https://open.spotify.com/embed/track/3tS8q8SXxtrYSN8UgeQt6q"
 },
 
 {
@@ -538,7 +538,7 @@ embed:"https://open.spotify.com/embed/track/2RsAajgo0g7bMCHxwH3Sk0"
 {
 title:"Lithium",
 artist:"Nirvana",
-embed:"https://open.spotify.com/embed/track/5O0hQ0nJ7gV9uF3s3sWzPW"
+embed:"https://open.spotify.com/embed/track/5vHLwhxxlGzmClMcxRRFPr"
 },
 
 {
@@ -732,7 +732,7 @@ embed:"https://open.spotify.com/embed/track/0FE9t6xYkqWXU2ahLh6D8X"
 {
 title:"Counting Blue Cars",
 artist:"Dishwalla",
-embed:"https://open.spotify.com/embed/track/6pL8dHhE6UlyrA7DeF1CqG"
+embed:"https://open.spotify.com/embed/track/6B618H5CuCdEzcVs0NKTlt"
 },
 
 {
@@ -1070,6 +1070,7 @@ function render() {
 }
 
 render();
+
 
 
 
