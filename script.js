@@ -801,7 +801,7 @@ function uniqueTracks(list) {
   const seen = new Set();
 
   return list.filter(track => {
-    const key = ${track.title}__${track.artist}.toLowerCase();
+const key = ${track.title}__${track.artist}.toLowerCase();
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
@@ -822,8 +822,8 @@ function loadChampions() {
 
 function saveChampion(track) {
   const data = loadChampions();
-  const key = ${track.title}__${track.artist};
-
+const key = ${track.title}__${track.artist};
+  
   if (!data[key]) {
     data[key] = {
       title: track.title,
@@ -1108,3 +1108,4 @@ async function shareChampion() {
 }
 
 render();
+
