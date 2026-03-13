@@ -1,4 +1,4 @@
-const tracks = [
+const tracks
   
   {
     title: "As It Was",
@@ -982,27 +982,7 @@ async function shareChampion() {
   link.href = dataUrl;
   link.download = "soundclash-campea.png";
   link.click();
-}
-function render() {
-  const game = document.getElementById("game");
-  if (!game) return;
 
-  if (!started) {
-    game.innerHTML = renderStartScreen();
-    return;
-  }
-
-  if (loadingPhase) {
-    game.innerHTML = renderLoadingScreen();
-    return;
-  }
-
-  if (champion) {
-    game.innerHTML = renderWinnerScreen();
-    return;
-  }
-
-  game.innerHTML = renderBattleScreen();
 }
 
 
@@ -1119,21 +1099,16 @@ function chooseTrack(winner) {
     loadingPhase = false;
     render();
   }, 900);
+
 }
 
   
-
-  currentRound = nextRound;
-  nextRound = [];
-  currentIndex = 0;
-  render();
-}
-
 function chooseTrackByIndex(index) {
   chooseTrack(currentRound[index]);
 }
 
 render();
+
 
 
 
