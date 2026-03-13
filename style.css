@@ -251,5 +251,23 @@ iframe {
   font-weight: 700;
   letter-spacing: 1px;
 }
+@media (max-width: 600px) {
+
+.topbar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.badge {
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+.main-btn {
+  width: 100%;
+}
+
+
 
 
