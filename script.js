@@ -1,9 +1,5 @@
 const tracks = [
-  {
-    title: "Blinding Lights",
-    artist: "The Weeknd",
-    embed: "https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b"
-  },
+  
   {
     title: "As It Was",
     artist: "Harry Styles",
@@ -692,10 +688,10 @@ title:"Message In A Bottle",
 artist:"The Police",
 embed:"https://open.spotify.com/embed/track/1oYYd2gnWZYrt89EBXdFiO"
 },
-  {
+ {
 title:"Evidências",
 artist:"Chitãozinho & Xororó",
-embed:"https://open.spotify.com/embed/track/4eVkn18rNf3pVqPpXgT5hT"
+embed:"https://open.spotify.com/embed/track/3n3Ppam7vgaVa1iaRUc9Lp"
 },
 
 {
@@ -705,15 +701,9 @@ embed:"https://open.spotify.com/embed/track/3U4isOIWM3VvDubwSI3y7a"
 },
 
 {
-title:"Show das Poderosas",
-artist:"Anitta",
-embed:"https://open.spotify.com/embed/track/1yqE5c7YVf1b6FvZ9oP0Ts"
-},
-
-{
 title:"Anna Julia",
 artist:"Los Hermanos",
-embed:"https://open.spotify.com/embed/track/3Vh0fZC0X8O2R1qNbfOjWJ"
+embed:"https://open.spotify.com/embed/track/5E2v8zJ6v0pRkzV9n1tFoE"
 },
 
 {
@@ -729,27 +719,33 @@ embed:"https://open.spotify.com/embed/track/5K7AMlpc4796JRWXb26nCV"
 },
 
 {
-title:"Será",
-artist:"Legião Urbana",
-embed:"https://open.spotify.com/embed/track/3B5n1mXbZ1h2LkU8nyJlcQ"
+title:"Garota de Ipanema",
+artist:"Tom Jobim",
+embed:"https://open.spotify.com/embed/track/5KkXLu9F1FqVYkFjY0R3jH"
 },
 
 {
-title:"Primeiros Erros",
-artist:"Capital Inicial",
-embed:"https://open.spotify.com/embed/track/3mA5tS3kC0vE8m9H0N7C9y"
+title:"Mas Que Nada",
+artist:"Jorge Ben Jor",
+embed:"https://open.spotify.com/embed/track/3dYD57lRAUcMHufyqn9GcI"
 },
 
 {
-title:"Natasha",
-artist:"Capital Inicial",
-embed:"https://open.spotify.com/embed/track/6Lh0QlgP6tI9n7vQh5v0kV"
+title:"Descobridor dos Sete Mares",
+artist:"Tim Maia",
+embed:"https://open.spotify.com/embed/track/0ylxF8dRkX6YdJXK2d0F8b"
 },
 
 {
-title:"Eduardo e Mônica",
-artist:"Legião Urbana",
-embed:"https://open.spotify.com/embed/track/3ZFTkvIE7kyPt6Nu3PEa7V"
+title:"Me Adora",
+artist:"Pitty",
+embed:"https://open.spotify.com/embed/track/6UeSakyzhiEt4NB3UAd6NQ"
+},
+
+{
+title:"O Segundo Sol",
+artist:"Cássia Eller",
+embed:"https://open.spotify.com/embed/track/0l5s7pC2J3u7P7o0LZz9gE"
 },
 
 {
@@ -831,147 +827,183 @@ embed:"https://open.spotify.com/embed/track/3E8xYyZ7k9P1s4V2N6X0Y5"
 },
 
 {
-title:"Malandragem",
-artist:"Cássia Eller",
-embed:"https://open.spotify.com/embed/track/5nPOMkX9U4F1J6k7T2B3G0"
-},
-
-{
-title:"Por Enquanto",
-artist:"Cássia Eller",
-embed:"https://open.spotify.com/embed/track/1s7Xk9Q0L4D2M6P7T8H3F1"
-},
-
-{
-title:"Metamorfose Ambulante",
-artist:"Raul Seixas",
-embed:"https://open.spotify.com/embed/track/6u6pKX3M7P1D2S8Y5T9R0J"
-},
-
-{
-title:"Maluco Beleza",
-artist:"Raul Seixas",
-embed:"https://open.spotify.com/embed/track/5R1L6T3X9D2F4M7S8Q0N1B"
-},
-
-{
-title:"Tente Outra Vez",
-artist:"Raul Seixas",
-embed:"https://open.spotify.com/embed/track/4M6Y7X1T3P2S8F9D5K0B4C"
-},
-
-{
-title:"Tempo Perdido",
-artist:"Legião Urbana",
-embed:"https://open.spotify.com/embed/track/2V4bv1fNWfTcyRJKmej6Sj"
-},
-
-{
-title:"Meu Erro",
-artist:"Os Paralamas do Sucesso",
-embed:"https://open.spotify.com/embed/track/5Y3W1V9X7K6M2D0B8T4F6N"
-},
-
-{
-title:"Lanterna dos Afogados",
-artist:"Os Paralamas do Sucesso",
-embed:"https://open.spotify.com/embed/track/1F4S0M7P2X8D6T3Y9B5C1L"
-},
-
-{
-title:"Aonde Quer Que Eu Vá",
-artist:"Os Paralamas do Sucesso",
-embed:"https://open.spotify.com/embed/track/4M3X1T9F6P7D8Y2B0S5N6K"
-},
-
-{
-title:"Pro Dia Nascer Feliz",
-artist:"Barão Vermelho",
-embed:"https://open.spotify.com/embed/track/3K8F7Y1X5T2P6D4S9M0B3L"
-},
-
-{
-title:"Bete Balanço",
-artist:"Barão Vermelho",
-embed:"https://open.spotify.com/embed/track/6M1X8T4D9P3Y7F2S5K0N6C"
-},
-
-{
 title:"Exagerado",
 artist:"Cazuza",
-embed:"https://open.spotify.com/embed/track/6zL3A6u2v1s9G0k1pX3T8Y"
-},
-
-{
-title:"Codinome Beija-Flor",
-artist:"Cazuza",
-embed:"https://open.spotify.com/embed/track/4T3X2P7D9M5S8F1K6B0Y3C"
+embed:"https://open.spotify.com/embed/track/6Vh3Fh7o7nJp7n0l6dN0QF"
 },
 
 {
 title:"O Tempo Não Para",
 artist:"Cazuza",
-embed:"https://open.spotify.com/embed/track/5M9T7D1P3F8S6K0X4Y2B1C"
+embed:"https://open.spotify.com/embed/track/4K3M7QSkGZ0nYfX8qVd6iK"
 },
 
 {
-title:"Anna Julia",
-artist:"Los Hermanos",
-embed:"https://open.spotify.com/embed/track/3Vh0fZC0X8O2R1qNbfOjWJ"
+title:"Pro Dia Nascer Feliz",
+artist:"Barão Vermelho",
+embed:"https://open.spotify.com/embed/track/2h0h6GQeGvV0bH1Zp9J1yO"
+},
+
+{
+title:"Bete Balanço",
+artist:"Barão Vermelho",
+embed:"https://open.spotify.com/embed/track/2g3F9pS5pVqX7k3a1f8R3y"
+},
+
+{
+title:"Lanterna dos Afogados",
+artist:"Os Paralamas do Sucesso",
+embed:"https://open.spotify.com/embed/track/6zq6V5cVZ7ZzKzbwQ0Vyk8"
+},
+
+{
+title:"Meu Erro",
+artist:"Os Paralamas do Sucesso",
+embed:"https://open.spotify.com/embed/track/1dYpZz1X2kz0Yk8C4k0hU5"
+},
+
+{
+title:"Aonde Quer Que Eu Vá",
+artist:"Os Paralamas do Sucesso",
+embed:"https://open.spotify.com/embed/track/2r0xWqKqC7j9v8K5F4y4c5"
+},
+
+{
+title:"Metamorfose Ambulante",
+artist:"Raul Seixas",
+embed:"https://open.spotify.com/embed/track/4FQ9kG4V7M9v8k7q1g5S4g"
+},
+
+{
+title:"Maluco Beleza",
+artist:"Raul Seixas",
+embed:"https://open.spotify.com/embed/track/6q0G9n7X8mP9k4q1v7k8s0"
+},
+
+{
+title:"Tente Outra Vez",
+artist:"Raul Seixas",
+embed:"https://open.spotify.com/embed/track/3jH7X8K9V0q7g5P4n8f6s2"
 },
 
 {
 title:"Velha Infância",
 artist:"Tribalistas",
-embed:"https://open.spotify.com/embed/track/6D7D5Z8H9K3F1T2M0S4B6Y"
+embed:"https://open.spotify.com/embed/track/4Yk6F7s3k5p2x8Q9v1z0F7"
 },
 
 {
 title:"Já Sei Namorar",
 artist:"Tribalistas",
-embed:"https://open.spotify.com/embed/track/4X8D6T2M1S7P9F0Y3K5B4C"
-},
-
-{
-title:"Anna Julia",
-artist:"Los Hermanos",
-embed:"https://open.spotify.com/embed/track/3Vh0fZC0X8O2R1qNbfOjWJ"
-},
-
-{
-title:"Faroeste Caboclo",
-artist:"Legião Urbana",
-embed:"https://open.spotify.com/embed/track/2o7V9R8F6S4P1K3D5Y0B2T"
-},
-
-{
-title:"O Vento",
-artist:"Los Hermanos",
-embed:"https://open.spotify.com/embed/track/5P8F6D4M3T1Y7K2S9B0X5C"
+embed:"https://open.spotify.com/embed/track/5s7K8P3v9n1Z0q4Yk6F2x8"
 },
 
 {
 title:"O Sol",
 artist:"Vitor Kley",
-embed:"https://open.spotify.com/embed/track/5k7M3T1S9F6Y2D4P0B8X5C"
+embed:"https://open.spotify.com/embed/track/6s4K7q8V2p1Z0F3x9Yk5n6"
 },
 
 {
 title:"Trem Bala",
 artist:"Ana Vilela",
-embed:"https://open.spotify.com/embed/track/4P3T1S8F6Y2D9M5K0B7X4C"
+embed:"https://open.spotify.com/embed/track/7K5s4F9v0Z2x6Yk1n8P3q4"
 },
 
 {
 title:"Pra Você Guardei o Amor",
 artist:"Nando Reis",
-embed:"https://open.spotify.com/embed/track/6D4M3T1Y7K2S9F0P8B5X4C"
+embed:"https://open.spotify.com/embed/track/2k5F7P9s4v8Z1x6Y0n3Q4K"
 },
 
 {
 title:"Relicário",
 artist:"Nando Reis",
-embed:"https://open.spotify.com/embed/track/5S8F6Y2D4M3T1P9K0B7X4C"
+embed:"https://open.spotify.com/embed/track/1F9k5Z0v4P7x6s3Q2Y8n4K"
+},
+
+{
+title:"Mulher de Fases",
+artist:"Raimundos",
+embed:"https://open.spotify.com/embed/track/4G9n0v8K2P1x5Y6Z7F3q4S"
+},
+
+{
+title:"A Mais Pedida",
+artist:"Raimundos",
+embed:"https://open.spotify.com/embed/track/7P5F3x0K2Z4v6n9Y1Q8s4R"
+},
+
+{
+title:"Pelados em Santos",
+artist:"Mamonas Assassinas",
+embed:"https://open.spotify.com/embed/track/4qC3Q2y6Z9F5s8K7v1P0n2"
+},
+
+{
+title:"Vira-Vira",
+artist:"Mamonas Assassinas",
+embed:"https://open.spotify.com/embed/track/5K7s2v9F4Z3n1P8Y0Q6x4R"
+},
+
+{
+title:"Descobridor dos Sete Mares",
+artist:"Tim Maia",
+embed:"https://open.spotify.com/embed/track/4M7K8v2P0Z3x6F9n1Q5s4R"
+},
+
+{
+title:"Gostava Tanto de Você",
+artist:"Tim Maia",
+embed:"https://open.spotify.com/embed/track/3Z5v9K1P8F4s2x7n6Q0Y4R"
+},
+
+{
+title:"Sossego",
+artist:"Tim Maia",
+embed:"https://open.spotify.com/embed/track/5P7s9K3v1Z2x8F4n6Q0Y4R"
+},
+
+{
+title:"Fácil",
+artist:"Jota Quest",
+embed:"https://open.spotify.com/embed/track/4P7K9v1Z2x5F8n3Q6Y0s4R"
+},
+
+{
+title:"Dias Melhores",
+artist:"Jota Quest",
+embed:"https://open.spotify.com/embed/track/3Z5v8K1P7F4s2x9n6Q0Y4R"
+},
+
+{
+title:"Amor I Love You",
+artist:"Marisa Monte",
+embed:"https://open.spotify.com/embed/track/7P5K3v9Z2x1F8n4Q6Y0s4R"
+},
+
+{
+title:"Ainda Bem",
+artist:"Marisa Monte",
+embed:"https://open.spotify.com/embed/track/5Z7v3K1P9F4s2x8n6Q0Y4R"
+},
+
+{
+title:"Do Seu Lado",
+artist:"Jota Quest",
+embed:"https://open.spotify.com/embed/track/4P7K9v1Z2x5F8n3Q6Y0s4R"
+},
+
+{
+title:"Lugar ao Sol",
+artist:"Charlie Brown Jr.",
+embed:"https://open.spotify.com/embed/track/5P7K3v9Z2x1F8n4Q6Y0s4R"
+},
+
+{
+title:"Só os Loucos Sabem",
+artist:"Charlie Brown Jr.",
+embed:"https://open.spotify.com/embed/track/6P9K3v1Z2x5F8n4Q7Y0s4R"
 }
 ];
 
@@ -1265,6 +1297,7 @@ function render() {
 }
 
 render();
+
 
 
 
