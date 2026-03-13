@@ -218,14 +218,6 @@ iframe {
   padding: 10px 0;
 }
 
-.winner-actions {
-  display: flex;
-  gap: 14px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 24px;
-
-}
 
 .secondary-btn {
   background: #334155;
@@ -234,4 +226,30 @@ iframe {
 .secondary-btn:hover {
   background: #475569;
 }
+.winner-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.share-card {
+  max-width: 760px;
+  margin: 0 auto 24px;
+  padding: 28px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #152550 0%, #0f1d43 100%);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+.share-footer {
+  margin-top: 18px;
+  opacity: 0.8;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 
