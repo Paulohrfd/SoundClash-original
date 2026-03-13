@@ -723,12 +723,6 @@ embed:"https://open.spotify.com/embed/track/6habFhsOp2NvshLv26DqMb"
 },
 
 {
-title:"Shape of My Heart",
-artist:"Sting",
-embed:"https://open.spotify.com/embed/track/0FE9t6xYkqWXU2ahLh6D8X"
-},
-
-{
 title:"Counting Blue Cars",
 artist:"Dishwalla",
 embed:"https://open.spotify.com/embed/track/6B618H5CuCdEzcVs0NKTlt"
@@ -1079,7 +1073,10 @@ function chooseTrackByIndex(index) {
 
 async function generateChampionImage() {
   const card = document.querySelector(".share-card");
-  if (!card || typeof html2canvas === "undefined") return null;
+ if (typeof html2canvas === "undefined") {
+  alert("Erro ao gerar imagem.");
+  return null;
+}
 
   const canvas = await html2canvas(card, {
     backgroundColor: null,
@@ -1132,5 +1129,6 @@ async function shareChampion() {
 }
 
 render();
+
 
 
