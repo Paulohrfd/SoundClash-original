@@ -822,7 +822,7 @@ function loadChampions() {
 
 function saveChampion(track) {
   const data = loadChampions();
-const key = ${track.title}__${track.artist};
+const key = `${track.title}__${track.artist}`;
   
   if (!data[key]) {
     data[key] = {
@@ -1108,6 +1108,7 @@ async function shareChampion() {
 }
 
 render();
+
 
 
 
