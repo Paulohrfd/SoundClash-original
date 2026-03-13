@@ -1,5 +1,30 @@
 const tracks = [  
   {
+    title: "SET DO JAPA NK 2.0",
+    artist: "DJ Japa NK, MC Ryan SP, MC Meno K, Mc IG, MC LUUKY, Mc Jacaré, MC Rodrigo do CN, MC GH do 7, Mc Lele JP, MC Jvila e Oruam",
+    embed: "https://open.spotify.com/embed/track/1JZDwJgE9VSC0V2GR66z63"
+  },
+  {
+    title: "Bolha do Catucadão",
+    artist: "DJ DANN ORIGINAL, DJ Thseven7, Kaue Mc e Oliver MC",
+    embed: "https://open.spotify.com/embed/track/6wg9oQ055KTynFmkqc05yS"
+  },
+   {
+    title: "Oh Garota Eu Quero Você Só Pra Mim",
+    artist: "Oruam, Zé Felipe e MC Tuto",
+    embed: "https://open.spotify.com/embed/track/0BUkQGUXgcvf3gdCWYbtnJ"
+  },
+  {
+    title: "THE BOX MEDLEY FUNK 2",
+    artist: "THE BOX, MC Cebezinho, MC Brinquedo, Dj Oreia, Mc Laranjinha e MC Tuto",
+    embed: "https://open.spotify.com/embed/track/7IFsTX5H1sWcEl8joV0IdD"
+  },
+   {
+    title: "A Internet É Toxica",
+    artist: "MC Saci, Mc Pretchako, DJ JOAO DA INESTAN e Dj Lc",
+    embed: "https://open.spotify.com/embed/track/6Gn8SHd3RIWjOermcidCJk"
+  },
+  {
     title: "As It Was",
     artist: "Harry Styles",
     embed: "https://open.spotify.com/embed/track/4LRPiXqCikLlN15c3yImP7"
@@ -1129,6 +1154,7 @@ async function shareChampion() {
 }
 
 render();
+
 
 
 
