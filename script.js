@@ -876,7 +876,7 @@ function startGame() {
 function restartGame() {
   startGame();
 
-  }
+  
 
   navigator.clipboard.writeText(`${text}\n${window.location.href}`)
     .then(() => alert("Resultado copiado para compartilhar!"))
@@ -1085,6 +1085,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
