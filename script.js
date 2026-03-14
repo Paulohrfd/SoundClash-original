@@ -1086,7 +1086,7 @@ function renderRankingBlock() {
   return `
     <div class="ranking-box">
       <div class="ranking-header">
-        <h3>Ranking Global</h3>
+        <h3>Ranking</h3>
         <div class="votes-badge">Copas finalizadas: <strong>${totalChampionships}</strong></div>
       </div>
       <ul class="ranking-list">
