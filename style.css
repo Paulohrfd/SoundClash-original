@@ -344,7 +344,7 @@ iframe {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 0;
+  gap: 40px;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
