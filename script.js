@@ -1389,28 +1389,21 @@ async function generateChampionImage() {
 }
 
 async function generateChampionImage() {
+
   const card = document.querySelector(".share-card");
-  if (!card || typeof html2canvas === "undefined") {
-    alert("Erro ao gerar imagem.");
-    return null;
-  }
+  if (!card) return;
 
   card.classList.add("export-mode");
 
   const canvas = await html2canvas(card, {
-    backgroundColor: null,
     scale: 2,
-    useCORS: true,
-    scrollX: 0,
-    scrollY: -window.scrollY,
-    windowWidth: 1200
+    backgroundColor: null
   });
 
   card.classList.remove("export-mode");
 
   return canvas.toDataURL("image/png");
 }
-
 
 async function shareChampion() {
   if (!champion) return;
