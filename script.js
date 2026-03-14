@@ -1116,6 +1116,25 @@ function renderLoadingScreen() {
       <p class="winner-title">${loadingText || "Carregando..."}</p>
     </div>
   `;
+}function renderBracketPairs(list) {
+  if (!list || !list.length) return "";
+
+  let html = "";
+
+  for (let i = 0; i < list.length; i += 2) {
+    const left = list[i];
+    const right = list[i + 1];
+
+    html += `
+      <div class="bracket-pair">
+        <div class="bracket-match">${left ? left.title : ""}</div>
+        <div class="bracket-x">✕</div>
+        <div class="bracket-match">${right ? right.title : ""}</div>
+      </div>
+    `;
+  }
+
+  return html;
 }
 
 function renderWinnerScreen() {
@@ -1125,7 +1144,7 @@ function renderWinnerScreen() {
       <h2 class="winner-song">${champion.title}</h2>
       <p class="winner-artist">${champion.artist}</p>
 
-      <div class="share-card">
+      <<div class="share-card">
   <p class="share-kicker">MINHA COPA NO SOUNDCLASH</p>
 
   <div class="bracket-board">
