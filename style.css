@@ -310,9 +310,9 @@ iframe {
 /* card de compartilhar */
 .share-card {
   width: 100%;
-  max-width: 1040px;
+  max-width: 1180px;
   margin: 0 auto 24px;
-  padding: 26px 34px 28px;
+  padding: 26px 40px 28px;
   border-radius: 28px;
   background:
     radial-gradient(circle at top center, rgba(123,77,255,.16), transparent 32%),
@@ -344,7 +344,7 @@ iframe {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 70px;
+  gap: 56px;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -393,9 +393,10 @@ iframe {
 }
 
 .champion-col {
-  flex: 0 0 220px;
-  min-width: 220px;
+  flex: 0 0 190px;
+  min-width: 190px;
   margin-top: 380px;
+  margin-left: -18px;
 }
 
 .bracket-pair {
