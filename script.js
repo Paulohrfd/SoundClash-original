@@ -3,6 +3,7 @@ const tracks = [
     title: "SET DO JAPA NK 2.0",
     artist: "DJ Japa NK, MC Ryan SP, MC Meno K, Mc IG, MC LUUKY, Mc Jacaré, MC Rodrigo do CN, MC GH do 7, Mc Lele JP, MC Jvila e Oruam",
     embed: "https://open.spotify.com/embed/track/1JZDwJgE9VSC0V2GR66z63"
+    mode: "brazil"
   },
   {
     title: "Look At Me!",
