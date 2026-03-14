@@ -1603,6 +1603,27 @@ function undoMove() {
   render();
 }
 
-render();
+function handleRoute() {
+  const path = window.location.pathname.toLowerCase();
+
+  if (path === "/general") {
+    startGame("general");
+    return;
+  }
+
+  if (path === "/international") {
+    startGame("international");
+    return;
+  }
+
+  if (path === "/brazil") {
+    startGame("brazil");
+    return;
+  }
+
+  render();
+}
+
+handleRoute();
 
 
