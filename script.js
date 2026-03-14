@@ -6,6 +6,30 @@ const tracks = [
     mode: "brazil"
   },
   {
+    title: "Metamorfose Ambulante",
+    artist: "Raul Seixas",
+    embed: "https://open.spotify.com/embed/track/2Yk0HvfTaijA47aM0Fj88u?si=q2CumYlgSbmTXIjmJ0VdKQ",
+    mode: "brazil"
+  },
+{
+    title: "Tempo Perdido",
+    artist: "Legião Urbano",
+    embed: "https://open.spotify.com/embed/track/7MnT7msJZg3XBAS0OTfGrB?si=gpALcNHpSEC8moX-rB4D-w",
+    mode: "brazil"
+  },
+{
+    title: "Não quero dinheiro",
+    artist: "Tim Maia",
+    embed: "https://open.spotify.com/embed/track/0SfcG65T1KKCj5NQffpzQR?si=HX4jMW78QS28NLJV_MOgGg",
+    mode: "brazil"
+  },
+{
+    title: "Não quero dinheiro",
+    artist: "Tim Maia",
+    embed: "https://open.spotify.com/embed/track/0SfcG65T1KKCj5NQffpzQR?si=HX4jMW78QS28NLJV_MOgGg",
+    mode: "brazil"
+  },
+  {
     title: "Look At Me!",
     artist: "XXXTENTACION",
     embed: "https://open.spotify.com/embed/track/7floNISpH8VF4z4459Qo18",
