@@ -63,6 +63,7 @@ body {
   color: #d7dbea;
 }
 
+/* home */
 .hero-screen {
   position: relative;
   overflow: hidden;
@@ -618,12 +619,12 @@ iframe {
   }
 
   .hero-subtitle {
-  font-size: 16px;
-  line-height: 1.4;
-  color: rgba(255,255,255,0.78);
-  text-align: center;
-  margin: 10px 0 34px;
-}
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgba(255,255,255,0.78);
+    text-align: center;
+    margin: 10px 0 34px;
+  }
 
   .hero-btn {
     width: 100%;
@@ -714,7 +715,7 @@ iframe {
   }
 
   .home-ranking-wrap .ranking-header {
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
   }
 
