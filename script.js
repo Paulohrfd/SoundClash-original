@@ -1378,6 +1378,15 @@ function renderBattleScreen() {
     </div>
   `;
 }
+function renderLoadingScreen() {
+  return `
+    <div class="start-screen hero-screen">
+      <div class="hero-glow"></div>
+      <img src="logo.png" class="logo" alt="SoundClash">
+      <p class="hero-subtitle">${loadingText || "Carregando..."}</p>
+    </div>
+  `;
+}
 
 function render() {
   const game = document.getElementById("game");
