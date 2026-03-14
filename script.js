@@ -1204,15 +1204,11 @@ function renderBattleScreen() {
 
   return `
     <div class="topbar">
-  <div class="badge">Fase: <strong>${phase}</strong></div>
-  <div class="badge">Duelo: <strong>${duel}</strong> de <strong>${totalDuels}</strong></div>
-
-  ${undoAvailable && lastState ? `
-    <button class="main-btn secondary-btn" onclick="undoMove()">VOLTAR</button>
-  ` : ""}
-
-  <button class="main-btn" onclick="startGame()">REINICIAR</button>
-</div>
+      <div class="badge">Fase: <strong>${phase}</strong></div>
+      <div class="badge">Duelo: <strong>${duel}</strong> de <strong>${totalDuels}</strong></div>
+      ${undoAvailable && lastState ? '<button class="main-btn secondary-btn" onclick="undoMove()">VOLTAR</button>' : ''}
+      <button class="main-btn" onclick="startGame()">REINICIAR</button>
+    </div>
 
     <div class="battle-grid">
       <div class="card">
@@ -1231,6 +1227,28 @@ function renderBattleScreen() {
 
         <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex})">ESCOLHER</button>
       </div>
+
+      <div class="vs">VS</div>
+
+      <div class="card">
+        <h2>${right.title}</h2>
+        <p>${right.artist}</p>
+
+        <div class="player">
+          <iframe
+            src="${right.embed}"
+            width="100%"
+            height="120"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex + 1})">ESCOLHER</button>
+      </div>
+    </div>
+  `;
+}
 
       <div class="vs">VS</div>
 
