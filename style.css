@@ -618,6 +618,17 @@ iframe {
   .logo {
     width: 130px;
   }
+  /* logo maior na tela de carregamento */
+
+.start-screen .logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.hero-screen .logo {
+  width: 180px;
+  margin-top: -40px;
+}
 
   .hero-subtitle {
     font-size: 18px;
