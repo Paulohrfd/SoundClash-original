@@ -1,44 +1,31 @@
-/* =========================================================
-   RESET
-========================================================= */
 * {
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background:
-    radial-gradient(circle at top center, rgba(123, 77, 255, 0.10), transparent 30%),
-    linear-gradient(180deg, #081638 0%, #06122d 100%);
-  color: #ffffff;
+  background: #081638;
+  color: #fff;
   font-family: Arial, sans-serif;
-  min-height: 100vh;
 }
 
-/* =========================================================
-   APP BASE
-========================================================= */
 .app {
   min-height: 100vh;
+  padding: 32px 16px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding: 32px 16px;
 }
 
 #game {
   width: 100%;
-  max-width: 1120px;
+  max-width: 1100px;
 }
 
-/* =========================================================
-   COMMON SCREENS
-========================================================= */
+/* telas */
 .start-screen,
 .winner-screen {
   min-height: 70vh;
@@ -54,123 +41,93 @@ body {
   margin: 0;
   font-size: 56px;
   font-weight: 800;
-  line-height: 1;
 }
 
-.hero-subtitle {
+.winner-title {
   margin: 0;
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.72);
-  text-align: center;
+  letter-spacing: 2px;
+  opacity: 0.8;
 }
 
-/* =========================================================
-   BUTTONS
-========================================================= */
-.main-btn,
-.choice-btn,
-.secondary-btn {
-  appearance: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 18px;
-  font-size: 20px;
-  font-weight: 700;
-  padding: 18px 36px;
-  color: #fff;
-  transition:
-    transform 0.14s ease,
-    box-shadow 0.14s ease,
-    background 0.14s ease,
-    opacity 0.14s ease;
+.winner-song {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 800;
 }
 
+.winner-artist {
+  margin: 0;
+  font-size: 22px;
+  color: #d7dbea;
+}
+
+/* home */
+.hero-screen {
+  min-height: 100vh;
+  border-radius: 28px;
+  padding: 40px 20px 80px;
+  background:
+    radial-gradient(circle at top center, rgba(122,74,255,.18), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(0,180,255,.10), transparent 25%),
+    linear-gradient(180deg, #071a4a 0%, #04153d 100%);
+}
+
+.hero-glow {
+  position: absolute;
+  top: 120px;
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, rgba(130,73,255,.22) 0%, rgba(130,73,255,0) 70%);
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.logo {
+  width: 160px;
+  max-width: 60%;
+  margin-bottom: 8px;
+  filter: drop-shadow(0 0 18px rgba(130,80,255,.35));
+}
+
+.home-ranking-wrap {
+  width: 100%;
+  max-width: 860px;
+}
+
+/* botões */
 .main-btn,
 .choice-btn {
+  border: none;
+  border-radius: 18px;
+  padding: 18px 36px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
   background: linear-gradient(180deg, #8a4dff 0%, #7c3aed 100%);
-  box-shadow: 0 12px 28px rgba(124, 58, 237, 0.28);
+  box-shadow: 0 12px 28px rgba(124,58,237,.28);
+  transition: transform .14s ease, box-shadow .14s ease, background .14s ease;
 }
 
 .main-btn:hover,
 .choice-btn:hover {
   background: linear-gradient(180deg, #915cff 0%, #6d28d9 100%);
   transform: translateY(-2px);
-  box-shadow: 0 16px 34px rgba(124, 58, 237, 0.38);
+  box-shadow: 0 16px 34px rgba(124,58,237,.38);
 }
 
 .main-btn:active,
-.choice-btn:active,
-.secondary-btn:active {
-  transform: scale(0.98);
-}
-
-.secondary-btn {
-  background: #334155;
-}
-
-.secondary-btn:hover {
-  background: #475569;
+.choice-btn:active {
+  transform: scale(.98);
 }
 
 .hero-btn {
   min-width: 210px;
   border-radius: 22px;
-  font-size: 20px;
-  font-weight: 800;
-  padding: 18px 36px;
 }
 
-/* =========================================================
-   HERO / HOME
-========================================================= */
-.hero-screen {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 22px;
-  padding: 40px 20px 80px;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at top center, rgba(122, 74, 255, 0.16), transparent 30%),
-    radial-gradient(circle at bottom left, rgba(0, 180, 255, 0.10), transparent 25%),
-    linear-gradient(180deg, #071a4a 0%, #04153d 100%);
-  border-radius: 28px;
-}
-
-.hero-glow {
-  position: absolute;
-  top: 110px;
-  width: 360px;
-  height: 360px;
-  background: radial-gradient(circle, rgba(130, 73, 255, 0.22) 0%, rgba(130, 73, 255, 0) 70%);
-  filter: blur(20px);
-  pointer-events: none;
-}
-
-.logo {
-  position: relative;
-  z-index: 1;
-  width: 160px;
-  max-width: 60%;
-  margin-bottom: 6px;
-  filter: drop-shadow(0 0 18px rgba(130, 80, 255, 0.35));
-}
-
-.home-ranking-wrap {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: 860px;
-  margin-top: 6px;
-}
-
-/* =========================================================
-   TOP BAR
-========================================================= */
+/* topo batalha */
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -181,18 +138,14 @@ body {
 }
 
 .badge {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.08);
   border-radius: 16px;
   padding: 12px 16px;
   font-size: 14px;
-  line-height: 1.2;
-  color: rgba(255, 255, 255, 0.92);
 }
 
-/* =========================================================
-   BATTLE GRID
-========================================================= */
+/* batalha */
 .battle-grid {
   display: grid;
   grid-template-columns: 1fr 120px 1fr;
@@ -204,19 +157,15 @@ body {
   text-align: center;
   font-weight: 800;
   letter-spacing: 2px;
-  opacity: 0.88;
+  opacity: .88;
 }
 
-/* =========================================================
-   CARDS
-========================================================= */
 .card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.08);
   border-radius: 24px;
   padding: 18px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.22);
 }
 
 .card h2 {
@@ -227,8 +176,8 @@ body {
 
 .card p {
   margin: 0 0 16px;
-  color: #d7dbea;
   font-size: 16px;
+  color: #d7dbea;
 }
 
 .player {
@@ -239,56 +188,29 @@ body {
 
 iframe {
   display: block;
+  width: 100%;
   border: 0;
 }
 
-/* =========================================================
-   WINNER HEADER
-========================================================= */
-.winner-title {
-  font-size: 18px;
-  letter-spacing: 2px;
-  opacity: 0.8;
-  margin: 0;
-}
-
-.winner-song {
-  font-size: 44px;
-  font-weight: 800;
-  line-height: 1.08;
-  margin: 0;
-}
-
-.winner-artist {
-  font-size: 22px;
-  color: #d7dbea;
-  margin: 0;
-}
-
-/* =========================================================
-   ACTIONS
-========================================================= */
+/* ações */
 .winner-actions {
   display: flex;
   gap: 14px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 24px;
   width: 100%;
 }
 
-/* =========================================================
-   RANKING
-========================================================= */
+/* ranking */
 .ranking-box {
   width: 100%;
   max-width: 900px;
   margin: 24px auto 0;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.08);
   border-radius: 24px;
   padding: 18px;
-  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 12px 34px rgba(0,0,0,.18);
 }
 
 .ranking-header {
@@ -306,7 +228,7 @@ iframe {
 }
 
 .votes-badge {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255,255,255,.08);
   padding: 10px 14px;
   border-radius: 14px;
   font-size: 14px;
@@ -325,7 +247,7 @@ iframe {
   align-items: center;
   gap: 14px;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255,255,255,.04);
   border-radius: 18px;
   padding: 14px 16px;
 }
@@ -341,11 +263,6 @@ iframe {
   flex-direction: column;
   align-items: flex-start;
   flex: 1;
-  min-width: 0;
-}
-
-.ranking-info strong {
-  line-height: 1.2;
 }
 
 .ranking-info span {
@@ -356,7 +273,6 @@ iframe {
 .ranking-wins {
   font-weight: 700;
   font-size: 14px;
-  white-space: nowrap;
 }
 
 .ranking-empty {
@@ -365,9 +281,8 @@ iframe {
 }
 
 .home-ranking-wrap .ranking-box {
-  background: rgba(25, 39, 86, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+  background: rgba(25,39,86,.92);
+  box-shadow: 0 18px 50px rgba(0,0,0,.22);
 }
 
 .home-ranking-wrap .ranking-header h3 {
@@ -375,16 +290,7 @@ iframe {
   font-weight: 800;
 }
 
-.home-ranking-wrap .ranking-item {
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 16px;
-  padding: 14px 18px;
-  margin-bottom: 10px;
-}
-
-/* =========================================================
-   SHARE CARD
-========================================================= */
+/* card de compartilhar */
 .share-card {
   width: 100%;
   max-width: 920px;
@@ -392,45 +298,41 @@ iframe {
   padding: 26px 24px 28px;
   border-radius: 28px;
   background:
-    radial-gradient(circle at top center, rgba(123, 77, 255, 0.16), transparent 32%),
+    radial-gradient(circle at top center, rgba(123,77,255,.16), transparent 32%),
     linear-gradient(180deg, #13265a 0%, #0c1d49 100%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 16px 50px rgba(0,0,0,.28);
   text-align: center;
   overflow: hidden;
 }
 
 .share-kicker {
+  margin: 0 0 20px;
   font-size: 14px;
   letter-spacing: 2px;
-  opacity: 0.82;
-  margin-bottom: 20px;
   text-transform: uppercase;
+  opacity: .82;
 }
 
 .share-footer {
   margin-top: 24px;
-  opacity: 0.78;
-  text-align: center;
+  opacity: .78;
   letter-spacing: 3px;
   font-weight: 800;
   text-transform: lowercase;
 }
 
-/* =========================================================
-   BRACKET
-========================================================= */
+/* chave */
 .bracket-board {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   gap: 22px;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
   padding: 10px 4px 14px;
-  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 .bracket-board::-webkit-scrollbar {
@@ -438,8 +340,8 @@ iframe {
 }
 
 .bracket-col {
-  flex: 0 0 160px;
-  min-width: 160px;
+  flex: 0 0 170px;
+  min-width: 170px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -452,24 +354,13 @@ iframe {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  opacity: 0.88;
+  opacity: .88;
 }
 
-.quarter-col {
-  margin-top: 0;
-}
-
-.semi-col {
-  margin-top: 40px;
-}
-
-.final-col {
-  margin-top: 90px;
-}
-
-.champion-col {
-  margin-top: 90px;
-}
+.quarter-col { margin-top: 0; }
+.semi-col { margin-top: 42px; }
+.final-col { margin-top: 96px; }
+.champion-col { margin-top: 96px; }
 
 .bracket-pair {
   position: relative;
@@ -487,7 +378,7 @@ iframe {
   top: 50%;
   width: 18px;
   height: 2px;
-  background: rgba(255, 255, 255, 0.28);
+  background: rgba(255,255,255,.28);
 }
 
 .semi-col .bracket-pair::before,
@@ -498,15 +389,15 @@ iframe {
   top: 50%;
   width: 18px;
   height: 2px;
-  background: rgba(255, 255, 255, 0.28);
+  background: rgba(255,255,255,.28);
 }
 
 .bracket-x {
   font-size: 30px;
   font-weight: 900;
   line-height: 1;
-  color: rgba(255, 255, 255, 0.95);
-  text-shadow: 0 0 14px rgba(123, 77, 255, 0.35);
+  color: rgba(255,255,255,.95);
+  text-shadow: 0 0 14px rgba(123,77,255,.35);
 }
 
 .bracket-match {
@@ -518,35 +409,31 @@ iframe {
   text-align: center;
   padding: 12px 14px;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.08);
   font-size: 14px;
   font-weight: 700;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.05),
-    0 8px 20px rgba(0, 0, 0, 0.16);
-  transition: 0.2s ease;
+    inset 0 1px 0 rgba(255,255,255,.05),
+    0 8px 20px rgba(0,0,0,.16);
 }
 
 .winner-match {
-  background: linear-gradient(180deg, rgba(123, 77, 255, 0.22), rgba(123, 77, 255, 0.12));
-  border: 1px solid rgba(160, 108, 255, 0.75);
+  background: linear-gradient(180deg, rgba(123,77,255,.22), rgba(123,77,255,.12));
+  border: 1px solid rgba(160,108,255,.75);
   box-shadow:
-    0 0 0 1px rgba(160, 108, 255, 0.18),
-    0 12px 28px rgba(123, 77, 255, 0.28),
-    inset 0 0 18px rgba(160, 108, 255, 0.12);
+    0 0 0 1px rgba(160,108,255,.18),
+    0 12px 28px rgba(123,77,255,.28),
+    inset 0 0 18px rgba(160,108,255,.12);
   opacity: 1;
   transform: scale(1.03);
 }
 
 .loser-match {
-  opacity: 0.42;
-  filter: grayscale(0.35);
+  opacity: .42;
+  filter: grayscale(.35);
 }
 
-/* =========================================================
-   CHAMPION BOX
-========================================================= */
 .champion-name {
   min-height: 56px;
   display: flex;
@@ -558,20 +445,18 @@ iframe {
   background: linear-gradient(45deg, #7b4dff, #a06cff);
   font-size: 20px;
   font-weight: 800;
-  box-shadow: 0 12px 28px rgba(123, 77, 255, 0.35);
+  box-shadow: 0 12px 28px rgba(123,77,255,.35);
   transform: scale(1.03);
 }
 
 .champion-artist {
   margin-top: 10px;
   font-size: 15px;
-  opacity: 0.82;
+  opacity: .82;
   text-align: center;
 }
 
-/* =========================================================
-   TABLET
-========================================================= */
+/* tablet */
 @media (max-width: 900px) {
   .battle-grid {
     grid-template-columns: 1fr;
@@ -594,9 +479,7 @@ iframe {
   }
 }
 
-/* =========================================================
-   MOBILE
-========================================================= */
+/* mobile */
 @media (max-width: 600px) {
   .app {
     padding: 20px 12px 28px;
@@ -659,7 +542,7 @@ iframe {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255,255,255,.5);
     margin: 10px 0 18px;
   }
 
@@ -668,7 +551,7 @@ iframe {
     content: "";
     flex: 1;
     height: 1px;
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(255,255,255,.12);
   }
 
   .hero-screen {
@@ -690,14 +573,6 @@ iframe {
     padding: 16px 24px;
   }
 
-  .home-ranking-wrap {
-    margin-top: 6px;
-  }
-
-  .home-ranking-wrap .ranking-header h3 {
-    font-size: 22px;
-  }
-
   .logo {
     width: 130px;
   }
@@ -708,12 +583,7 @@ iframe {
   }
 
   .bracket-board {
-    display: flex;
-    flex-direction: row;
     gap: 18px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
   }
 
   .bracket-col {
