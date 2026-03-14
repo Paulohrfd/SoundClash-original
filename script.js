@@ -1360,7 +1360,7 @@ async function chooseTrack(winner) {
 
 function chooseTrackByIndex(index) {
   chooseTrack(currentRound[index]);
-}
+} 
 
 async function generateChampionImage() {
   const card = document.querySelector(".share-card");
