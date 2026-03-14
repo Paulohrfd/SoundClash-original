@@ -1229,7 +1229,7 @@ function renderBattleScreen() {
             loading="lazy">
           </iframe>
           <p class="spotify-note">
-  Ouça a música completa entrando no Spotify.
+  Ouça a música completa entrando no Spotify. 
 </p>
         </div>
 
@@ -1251,7 +1251,7 @@ function renderBattleScreen() {
             loading="lazy">
           </iframe>
           <p class="spotify-note">
-  Ouça a música completa entrando no Spotify.
+  Ouça a música completa entrando no Spotify. 
 </p>
         </div>
 
