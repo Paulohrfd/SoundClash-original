@@ -1375,23 +1375,10 @@ function chooseTrackByIndex(index) {
 
 async function generateChampionImage() {
   const card = document.querySelector(".share-card");
-  if (typeof html2canvas === "undefined") {
+  if (!card || typeof html2canvas === "undefined") {
     alert("Erro ao gerar imagem.");
     return null;
   }
-
-  const canvas = await html2canvas(card, {
-    backgroundColor: null,
-    scale: 2
-  });
-
-  return canvas.toDataURL("image/png");
-}
-
-async function generateChampionImage() {
-
-  const card = document.querySelector(".share-card");
-  if (!card) return;
 
   card.classList.add("export-mode");
 
@@ -1403,6 +1390,16 @@ async function generateChampionImage() {
   card.classList.remove("export-mode");
 
   return canvas.toDataURL("image/png");
+}
+
+async function downloadChampionImage() {
+  const dataUrl = await generateChampionImage();
+  if (!dataUrl || !champion) return;
+
+  const link = document.createElement("a");
+  link.href = dataUrl;
+  link.download = `soundclash-${champion.title}.png`;
+  link.click();
 }
 
 async function shareChampion() {
@@ -1421,13 +1418,11 @@ async function shareChampion() {
   const file = new File([blob], "soundclash-campeao.png", { type: "image/png" });
 
   if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
-    navigator
-      .share({
-        title: "SoundClash",
-        text,
-        files: [file]
-      })
-      .catch(() => {});
+    navigator.share({
+      title: "SoundClash",
+      text,
+      files: [file]
+    }).catch(() => {});
     return;
   }
 
