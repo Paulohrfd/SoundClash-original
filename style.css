@@ -393,9 +393,9 @@ iframe {
 }
 
 .champion-col {
-  flex: 0 0 210px;
-  min-width: 210px;
-  margin-top: 320px;
+  flex: 0 0 220px;
+  min-width: 220px;
+  margin-top: 380px;
 }
 
 .bracket-pair {
