@@ -12,6 +12,12 @@ const tracks = [
     mode: "international"
   },
   {
+    title: "Anna Júlia",
+    artist: "Los Hermanos",
+    embed: "https://open.spotify.com/track/0aASUtDb1N96NJDwmWj5Gf?si=i4o1_f6QTb60VdLwtJOYOg",
+    mode: "brazil"
+  },
+  {
   title: "Toosie Slide",
   artist: "Drake",
   embed: "https://open.spotify.com/embed/track/127QTOFJsJQp5LbJbu3A1y",
