@@ -1116,7 +1116,8 @@ function renderLoadingScreen() {
       <p class="winner-title">${loadingText || "Carregando..."}</p>
     </div>
   `;
-}function renderBracketPairs(list) {
+}
+function renderBracketPairs(list) {
   if (!list || !list.length) return "";
 
   let html = "";
@@ -1144,49 +1145,33 @@ function renderWinnerScreen() {
       <h2 class="winner-song">${champion.title}</h2>
       <p class="winner-artist">${champion.artist}</p>
 
-      <<div class="share-card">
-  <p class="share-kicker">MINHA COPA NO SOUNDCLASH</p>
+      <div class="share-card">
+        <p class="share-kicker">MINHA COPA NO SOUNDCLASH</p>
 
-  <div class="bracket-board">
-    <div class="bracket-col quarter-col">
-      <h4>Quartas</h4>
-      ${renderBracketPairs(finalsHistory.quarter)}
-    </div>
+        <div class="bracket-board">
+          <div class="bracket-col quarter-col">
+            <h4>Quartas</h4>
+            ${renderBracketPairs(finalsHistory.quarter)}
+          </div>
 
-    <div class="bracket-col semi-col">
-      <h4>Semifinal</h4>
-      ${renderBracketPairs(finalsHistory.semi)}
-    </div>
+          <div class="bracket-col semi-col">
+            <h4>Semifinal</h4>
+            ${renderBracketPairs(finalsHistory.semi)}
+          </div>
 
-    <div class="bracket-col final-col">
-      <h4>Final</h4>
-      ${renderBracketPairs(finalsHistory.final)}
-    </div>
+          <div class="bracket-col final-col">
+            <h4>Final</h4>
+            ${renderBracketPairs(finalsHistory.final)}
+          </div>
 
-    <div class="bracket-col champion-col">
-      <h4>🏆 Campeão</h4>
-      <div class="champion-name">${champion.title}</div>
-      <div class="champion-artist">${champion.artist}</div>
-    </div>
-  </div>
-
-  <p class="share-footer">soundclash</p>
-</div>
-        <p class="winner-title">🏆 CAMPEÃO SOUNDCLASH</p>
-        <h3 class="winner-song">${champion.title}</h3>
-        <p class="winner-artist">${champion.artist}</p>
-
-        <div class="player">
-          <iframe
-            src="${champion.embed}"
-            width="100%"
-            height="120"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy">
-          </iframe>
+          <div class="bracket-col champion-col">
+            <h4>🏆 Campeão</h4>
+            <div class="champion-name">${champion.title}</div>
+            <div class="champion-artist">${champion.artist}</div>
+          </div>
         </div>
 
-        <p class="share-footer">SoundClash</p>
+        <p class="share-footer">soundclash</p>
       </div>
 
       <div class="winner-actions">
@@ -1301,6 +1286,11 @@ function startGame() {
   champion = null;
   loadingPhase = false;
   loadingText = "";
+  finalsHistory = {
+    quarter: [],
+    semi: [],
+    final: []
+  };
 
   render();
 }
@@ -1353,19 +1343,6 @@ async function chooseTrack(winner) {
     loadingPhase = false;
     render();
   }, 900);
-}
-
-// salvar fases finais
-if (currentRound.length === 8) {
-  finalsHistory.quarter = [...currentRound];
-}
-
-if (currentRound.length === 4) {
-  finalsHistory.semi = [...currentRound];
-}
-
-if (currentRound.length === 2) {
-  finalsHistory.final = [...currentRound];
 }
 
 
