@@ -583,13 +583,13 @@ iframe {
   }
 
   .bracket-board {
-    gap: 18px;
-  }
+  gap: 28px;
+}
 
   .bracket-col {
-    flex: 0 0 150px;
-    min-width: 150px;
-  }
+  flex: 0 0 200px;
+  min-width: 200px;
+}
 
   .semi-col {
     margin-top: 35px;
@@ -600,9 +600,12 @@ iframe {
     margin-top: 80px;
   }
 
-  .champion-name {
-    font-size: 18px;
-  }
+  .champion-name{
+  font-size:22px;
+  box-shadow:
+    0 18px 40px rgba(123,77,255,0.45),
+    0 0 35px rgba(160,108,255,0.25);
+}
 
   .ranking-item {
     gap: 10px;
