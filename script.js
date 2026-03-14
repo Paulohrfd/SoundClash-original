@@ -991,7 +991,10 @@ let loadingText = "";
 let finalsHistory = {
   quarter: [],
   semi: [],
-  final: []
+  final: [],
+  quarterWinners: [],
+  semiWinners: [],
+  finalWinner: null
 };
 
 function shuffle(array) {
@@ -1117,7 +1120,7 @@ function renderLoadingScreen() {
     </div>
   `;
 }
-function renderBracketPairs(list) {
+function renderBracketPairs(list, winners = []) {
   if (!list || !list.length) return "";
 
   let html = "";
@@ -1126,11 +1129,14 @@ function renderBracketPairs(list) {
     const left = list[i];
     const right = list[i + 1];
 
+    const leftWon = left && winners.some(w => w.title === left.title && w.artist === left.artist);
+    const rightWon = right && winners.some(w => w.title === right.title && w.artist === right.artist);
+
     html += `
       <div class="bracket-pair">
-        <div class="bracket-match">${left ? left.title : ""}</div>
+        <div class="bracket-match ${leftWon ? "winner-match" : "loser-match"}">${left ? left.title : ""}</div>
         <div class="bracket-x">✕</div>
-        <div class="bracket-match">${right ? right.title : ""}</div>
+        <div class="bracket-match ${rightWon ? "winner-match" : "loser-match"}">${right ? right.title : ""}</div>
       </div>
     `;
   }
@@ -1146,33 +1152,33 @@ function renderWinnerScreen() {
       <p class="winner-artist">${champion.artist}</p>
 
       <div class="share-card">
-        <p class="share-kicker">MINHA COPA NO SOUNDCLASH</p>
+  <p class="share-kicker">MINHA COPA NO SOUNDCLASH</p>
 
-        <div class="bracket-board">
-          <div class="bracket-col quarter-col">
-            <h4>Quartas</h4>
-            ${renderBracketPairs(finalsHistory.quarter)}
-          </div>
+  <div class="bracket-board">
+    <div class="bracket-col quarter-col">
+      <h4>Quartas</h4>
+      ${renderBracketPairs(finalsHistory.quarter, finalsHistory.quarterWinners)}
+    </div>
 
-          <div class="bracket-col semi-col">
-            <h4>Semifinal</h4>
-            ${renderBracketPairs(finalsHistory.semi)}
-          </div>
+    <div class="bracket-col semi-col">
+      <h4>Semifinal</h4>
+      ${renderBracketPairs(finalsHistory.semi, finalsHistory.semiWinners)}
+    </div>
 
-          <div class="bracket-col final-col">
-            <h4>Final</h4>
-            ${renderBracketPairs(finalsHistory.final)}
-          </div>
+    <div class="bracket-col final-col">
+      <h4>Final</h4>
+      ${renderBracketPairs(finalsHistory.final, finalsHistory.finalWinner ? [finalsHistory.finalWinner] : [])}
+    </div>
 
-          <div class="bracket-col champion-col">
-            <h4>🏆 Campeão</h4>
-            <div class="champion-name">${champion.title}</div>
-            <div class="champion-artist">${champion.artist}</div>
-          </div>
-        </div>
+    <div class="bracket-col champion-col">
+      <h4>🏆 Campeão</h4>
+      <div class="champion-name">${champion.title}</div>
+      <div class="champion-artist">${champion.artist}</div>
+    </div>
+  </div>
 
-        <p class="share-footer">soundclash</p>
-      </div>
+  <p class="share-footer">soundclash</p>
+</div>
 
       <div class="winner-actions">
         <button class="main-btn" onclick="shareChampion()">COMPARTILHAR RESULTADO</button>
@@ -1289,7 +1295,10 @@ function startGame() {
   finalsHistory = {
     quarter: [],
     semi: [],
-    final: []
+    final: [],
+    quarterWinners: [],
+    semiWinners: [],
+    finalWinner: null
   };
 
   render();
@@ -1304,17 +1313,19 @@ async function chooseTrack(winner) {
     return;
   }
 
-  // salva os participantes de cada fase final
   if (currentRound.length === 8) {
     finalsHistory.quarter = [...currentRound];
+    finalsHistory.quarterWinners = [...nextRound];
   }
 
   if (currentRound.length === 4) {
     finalsHistory.semi = [...currentRound];
+    finalsHistory.semiWinners = [...nextRound];
   }
 
   if (currentRound.length === 2) {
     finalsHistory.final = [...currentRound];
+    finalsHistory.finalWinner = nextRound[0];
   }
 
   if (nextRound.length === 1) {
@@ -1324,7 +1335,6 @@ async function chooseTrack(winner) {
     return;
   }
 
-  // embaralha a partir dos 32avos
   if (nextRound.length <= 64) {
     currentRound = shuffle([...nextRound]);
   } else {
