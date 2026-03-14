@@ -1295,17 +1295,32 @@ async function chooseTrack(winner) {
     return;
   }
 
+  // salva os participantes de cada fase final
   if (currentRound.length === 8) {
-  finalsHistory.quarter = [...currentRound];
-}
+    finalsHistory.quarter = [...currentRound];
+  }
 
-if (currentRound.length === 4) {
-  finalsHistory.semi = [...currentRound];
-}
+  if (currentRound.length === 4) {
+    finalsHistory.semi = [...currentRound];
+  }
 
-if (currentRound.length === 2) {
-  finalsHistory.final = [...currentRound];
-}
+  if (currentRound.length === 2) {
+    finalsHistory.final = [...currentRound];
+  }
+
+  if (nextRound.length === 1) {
+    champion = nextRound[0];
+    saveChampion(champion);
+    render();
+    return;
+  }
+
+  // embaralha a partir dos 32avos
+  if (nextRound.length <= 64) {
+    currentRound = shuffle([...nextRound]);
+  } else {
+    currentRound = [...nextRound];
+  }
 
   nextRound = [];
   currentIndex = 0;
