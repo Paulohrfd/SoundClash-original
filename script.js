@@ -2,34 +2,34 @@ const tracks = [
   {
     title: "SET DO JAPA NK 2.0",
     artist: "DJ Japa NK, MC Ryan SP, MC Meno K, Mc IG, MC LUUKY, Mc Jacaré, MC Rodrigo do CN, MC GH do 7, Mc Lele JP, MC Jvila e Oruam",
-    embed: "https://open.spotify.com/embed/track/1JZDwJgE9VSC0V2GR66z63"
+    embed: "https://open.spotify.com/embed/track/1JZDwJgE9VSC0V2GR66z63",
     mode: "brazil"
   },
   {
     title: "Look At Me!",
     artist: "XXXTENTACION",
-    embed: "https://open.spotify.com/embed/track/7floNISpH8VF4z4459Qo18"
-    mode: "internacional"
+    embed: "https://open.spotify.com/embed/track/7floNISpH8VF4z4459Qo18",
+    mode: "international"
   },
   {
     title: "Toosie Slide",
     artist: "Drake",
-    embed: "https://open.spotify.com/embed/track/127QTOFJsJQp5LbJbu3A1y"
+    embed: "https://open.spotify.com/embed/track/127QTOFJsJQp5LbJbu3A1y",
   },
   {
     title: "Somebody to Love (Remix) (part. USHER)",
     artist: "Justin Bieber",
-    embed: "https://open.spotify.com/embed/track/7IUl5c6u18rzmyQOblj10T"
+    embed: "https://open.spotify.com/embed/track/7IUl5c6u18rzmyQOblj10T",
   },
   {
     title: "HIGHEST IN THE ROOM",
     artist: "Travis Scott",
-    embed: "https://open.spotify.com/embed/track/3eekarcy7kvN4yt5ZFzltW"
+    embed: "https://open.spotify.com/embed/track/3eekarcy7kvN4yt5ZFzltW",
   },
   {
     title: "Danza Kuduro (part. Lucenzo)",
     artist: "Don Omar",
-    embed: "https://open.spotify.com/embed/track/2a1o6ZejUi8U3wzzOtCOYw"
+    embed: "https://open.spotify.com/embed/track/2a1o6ZejUi8U3wzzOtCOYw",
   },
   {
     title: "Faço Chover (It Will Rain)",
@@ -1334,29 +1334,7 @@ function startGame(mode = 'general') {
 
   render();
 }
-  const bracketSize = 2 ** Math.floor(Math.log2(shuffled.length));
-
-  started = true;
-  currentRound = shuffled.slice(0, bracketSize);
-  nextRound = [];
-  currentIndex = 0;
-  champion = null;
-  loadingPhase = false;
-  loadingText = "";
-  finalsHistory = {
-    quarter: [],
-    semi: [],
-    final: [],
-    quarterWinners: [],
-    semiWinners: [],
-    finalWinner: null
-  };
-
-  undoAvailable = true;
-  lastState = null;
-
-  render();
-}
+  
 
 async function chooseTrack(winner) {
   lastState = {
