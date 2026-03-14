@@ -817,3 +817,9 @@ iframe {
   max-width: 220px !important;
   font-size: 22px !important;
 }
+  .spotify-note {
+  font-size: 12px;
+  opacity: 0.65;
+  margin-top: 6px;
+  text-align: center;
+}
