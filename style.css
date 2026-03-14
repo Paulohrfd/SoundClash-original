@@ -685,3 +685,10 @@ iframe {
     0 14px 34px rgba(123,77,255,0.35),
     0 0 20px rgba(160,108,255,0.20);
 }
+.secondary-btn {
+  background: #334155;
+}
+
+.secondary-btn:hover {
+  background: #475569;
+}
