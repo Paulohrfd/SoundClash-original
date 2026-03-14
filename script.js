@@ -1201,7 +1201,7 @@ function renderStartScreen() {
       <div class="mode-buttons">
         <button class="main-btn hero-btn" onclick="startGame('general')">GERAL 🎶</button>
         <button class="main-btn hero-btn" onclick="startGame('international')">INTERNACIONAL 🌎</button>
-        <button class="main-btn hero-btn" onclick="startGame('brazil')">BRASILEIRO 🇧🇷</button>
+        <button class="main-btn hero-btn" onclick="startGame('brazil')">BRASIL 🇧🇷</button>
       </div>
 
       <div class="home-ranking-wrap">
