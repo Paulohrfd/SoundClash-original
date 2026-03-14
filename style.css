@@ -360,12 +360,12 @@ iframe {
 .bracket-col {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 18px;
   white-space: normal;
 }
 
 .bracket-col h4 {
-  margin: 0 0 6px;
+  margin: 0 0 10px;
   font-size: 15px;
   text-align: center;
   text-transform: uppercase;
@@ -373,41 +373,41 @@ iframe {
   opacity: .88;
 }
 
-/* formato triângulo no computador */
+/* organiza visualmente em formato mais simétrico */
 .quarter-col {
-  flex: 0 0 230px;
-  min-width: 230px;
+  flex: 0 0 240px;
+  min-width: 240px;
   margin-top: 0;
   margin-left: 0;
 }
 
 .semi-col {
-  flex: 0 0 200px;
-  min-width: 200px;
-  margin-top: 85px;
-  margin-left: -28px;
+  flex: 0 0 205px;
+  min-width: 205px;
+  margin-top: 95px;
+  margin-left: -24px;
 }
 
 .final-col {
-  flex: 0 0 170px;
-  min-width: 170px;
-  margin-top: 175px;
-  margin-left: -34px;
+  flex: 0 0 180px;
+  min-width: 180px;
+  margin-top: 190px;
+  margin-left: -20px;
 }
 
 .champion-col {
-  flex: 0 0 170px;
-  min-width: 170px;
-  margin-top: 265px;
-  margin-left: -28px;
+  flex: 0 0 180px;
+  min-width: 180px;
+  margin-top: 190px;
+  margin-left: -10px;
 }
 
 .bracket-pair {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 22px;
+  gap: 16px;
+  margin-bottom: 34px;
   align-items: center;
 }
 
@@ -470,8 +470,8 @@ iframe {
 }
 
 .loser-match {
-  opacity: .42;
-  filter: grayscale(.35);
+  opacity: 0.58;
+  filter: grayscale(0.12);
 }
 
 .champion-name {
