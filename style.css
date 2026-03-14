@@ -787,3 +787,38 @@ iframe {
   max-width: 220px !important;
   font-size: 22px !important;
 }
+/* layout usado somente ao exportar imagem */
+
+.share-card.export-mode {
+  width: 1100px !important;
+  max-width: 1100px !important;
+  overflow: visible !important;
+}
+
+.share-card.export-mode .bracket-board {
+  gap: 50px !important;
+  overflow: visible !important;
+}
+
+.share-card.export-mode .quarter-col {
+  flex: 0 0 240px !important;
+  min-width: 240px !important;
+}
+
+.share-card.export-mode .semi-col {
+  flex: 0 0 200px !important;
+  min-width: 200px !important;
+  margin-top: 120px !important;
+}
+
+.share-card.export-mode .final-col {
+  flex: 0 0 180px !important;
+  min-width: 180px !important;
+  margin-top: 260px !important;
+}
+
+.share-card.export-mode .champion-col {
+  flex: 0 0 200px !important;
+  min-width: 200px !important;
+  margin-top: 260px !important;
+}
