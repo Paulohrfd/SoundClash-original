@@ -193,12 +193,12 @@ iframe {
 }
 
 /* ações */
-.winner-actions {
-  display: flex;
-  gap: 14px;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
+.winner-actions{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  margin-top:28px;
+  width:100%;
 }
 
 /* ranking */
