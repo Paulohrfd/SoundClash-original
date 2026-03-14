@@ -1292,13 +1292,24 @@ function startGame(mode = 'general') {
   let selectedTracks = tracks;
 
   if (mode === 'brazil') {
-    selectedTracks = tracks.filter(track => track.mode === 'brazil');
+    const brazilTracks = tracks.filter(track => track.mode === 'brazil');
+    if (brazilTracks.length > 1) {
+      selectedTracks = brazilTracks;
+    }
   } else if (mode === 'international') {
-    selectedTracks = tracks.filter(track => track.mode === 'international');
+    const internationalTracks = tracks.filter(track => track.mode === 'international');
+    if (internationalTracks.length > 1) {
+      selectedTracks = internationalTracks;
+    }
   }
 
   const shuffled = uniqueTracks(shuffle(selectedTracks));
   const bracketSize = 2 ** Math.floor(Math.log2(shuffled.length));
+
+  if (bracketSize < 2) {
+    alert("Esse modo ainda não tem músicas suficientes.");
+    return;
+  }
 
   started = true;
   currentRound = shuffled.slice(0, bracketSize);
