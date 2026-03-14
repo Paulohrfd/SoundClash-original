@@ -123,6 +123,15 @@ body {
   transform: scale(.98);
 }
 
+/* botão voltar */
+.secondary-btn {
+  background: #334155;
+}
+
+.secondary-btn:hover {
+  background: #475569;
+}
+
 .hero-btn {
   min-width: 210px;
   border-radius: 22px;
@@ -684,11 +693,4 @@ iframe {
   box-shadow:
     0 14px 34px rgba(123,77,255,0.35),
     0 0 20px rgba(160,108,255,0.20);
-}
-.secondary-btn {
-  background: #334155;
-}
-
-.secondary-btn:hover {
-  background: #475569;
 }
