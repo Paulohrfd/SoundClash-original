@@ -12,6 +12,66 @@ const tracks = [
     mode: "brazil"
   },
   {
+    title: "Te Assumi Pro Brasil - Ao Vivo",
+    artist: "Matheus & Kauan",
+    embed: "https://open.spotify.com/embed/track/6P7Uodyh8g40Nyc3no6R8E",
+    mode: "brazil"
+  },
+  {
+    title: "Quarta Cadeira (Acústico)",
+    artist: "Matheus & Kauan",
+    embed: "https://open.spotify.com/embed/track/3xW3gvAnYH2JsLnubQ4GyT",
+    mode: "brazil"
+  },
+  {
+    title: "SEQUÊNCIA FEITICEIRA",
+    artist: "PEDRO SAMPAIO, Mc Gw, Mc Jhey, Mc Rodrigo do CN e MC Nito",
+    embed: "https://open.spotify.com/embed/track/4Lwm0XFseZ09OBdmUJlcYp",
+    mode: "brazil"
+  },
+  {
+    title: "Nocaute",
+    artist: "Jorge & Mateus",
+    embed: "https://open.spotify.com/embed/track/2NnSYdNhqye00il4nRB4tj",
+    mode: "brazil"
+  },
+  {
+    title: "Última Noite",
+    artist: "Léo Foguete",
+    embed: "https://open.spotify.com/embed/track/2Doe6AaIpyDy4JvFTsxSDn",
+    mode: "brazil"
+  },
+  {
+    title: "Eu Tenho Medo",
+    artist: "Zé Vaqueiro",
+    embed: "https://open.spotify.com/embed/track/7yjduLSgPntFlq79Cuzrfz",
+    mode: "brazil"
+  },
+  {
+    title: "Eu, Você, O Mar e Ela",
+    artist: "Luan Santana",
+    embed: "https://open.spotify.com/embed/track/693kJcwQwFTb8809nbvQxG",
+    mode: "brazil"
+  },
+  {
+    title: "Amiga da Minha Mulher",
+    artist: "Seu Jorge",
+    embed: "https://open.spotify.com/embed/track/5nh2T9qvyXZCvVVYYESeRW",
+    mode: "brazil"
+  },
+  {
+    title: "Quero Te Encontrar",
+    artist: "Claudinho & Buchecha",
+    embed: "https://open.spotify.com/embed/track/3AYcFdYKSL8mVqJWwCpS60",
+    mode: "brazil"
+  },
+  {
+    title: "Tropa De Elite",
+    artist: "Tihuana",
+    embed: "https://open.spotify.com/embed/track/0KuDeGUXh5QQ7gSiB6KGPh",
+    mode: "brazil"
+  },
+  {
     title: "Malandragem",
     artist: "Cássia Eller",
     embed: "https://open.spotify.com/embed/track/2Ktn7Hg3jocizpfzYJKLty",
