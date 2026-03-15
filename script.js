@@ -6,6 +6,12 @@ const tracks = [
     mode: "brazil"
   },
   {
+    title: "Mina do Condomínio",
+    artist: "Seu Jorge",
+    embed: "https://open.spotify.com/embed/track/3QA7VF91ehKfoYEDa5wcJb",
+    mode: "brazil"
+  },
+  {
     title: "Metamorfose Ambulante",
     artist: "Raul Seixas",
     embed: "https://open.spotify.com/embed/track/2Yk0HvfTaijA47aM0Fj88u?si=q2CumYlgSbmTXIjmJ0VdKQ",
