@@ -12,6 +12,24 @@ const tracks = [
     mode: "brazil"
   },
   {
+    title: "Cachimbo da Paz (part. Lulu Santos)",
+    artist: "Gabriel O Pensador",
+    embed: "https://open.spotify.com/embed/track/7E1duSMvHGUcYRgwrMZOUf",
+    mode: "brazil"
+  },
+  {
+    title: "Mega Funk Retro Apague a Luz",
+    artist: "DJ Lukinha Mix",
+    embed: "https://open.spotify.com/embed/track/3eIIfHsuZGBfFxXWN8qPTj",
+    mode: "brazil"
+  },
+  {
+    title: "Mimosa 2000",
+    artist: "Furacão 2000 e Nyasia",
+    embed: "https://open.spotify.com/embed/track/79bWkyd08EFDO0ZZuu7IRT",
+    mode: "brazil"
+  },
+  {
     title: "MTG NA IMAGINAÇÃO",
     artist: "DJ Topo e Mc Livinho",
     embed: "https://open.spotify.com/embed/track/4jUZymsR3lkia9wkP0o9cX",
