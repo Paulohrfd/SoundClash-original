@@ -12,6 +12,60 @@ const tracks = [
     mode: "brazil"
   },
   {
+    title: "Impressionando Os Anjos - ao vivo",
+    artist: "Gustavo Mioto",
+    embed: "https://open.spotify.com/embed/track/3v4l0SvxjTk9IjiVLhXiKA",
+    mode: "brazil"
+  },
+  {
+    title: "Vai Vendo",
+    artist: "Lucas Lucco",
+    embed: "https://open.spotify.com/embed/track/2jlVhPAhZuErUsbYLOqOxj",
+    mode: "brazil"
+  },
+  {
+    title: "Tremendo Vacilao",
+    artist: "Perlla",
+    embed: "https://open.spotify.com/embed/track/480o64VmNvWcwzCg74VUxW",
+    mode: "brazil"
+  },
+  {
+    title: "ESCADA DO PRÉDIO",
+    artist: "PEDRO SAMPAIO e Marina Sena",
+    embed: "https://open.spotify.com/embed/track/560vXBs6hssdrdOw13QPl9",
+    mode: "brazil"
+  },
+  {
+    title: "Ela so pensa em beijar",
+    artist: "Mc leozinho",
+    embed: "https://open.spotify.com/embed/track/0WSO3rLrwKWLTR5TtZRN0X",
+    mode: "brazil"
+  },
+  {
+    title: "Mds",
+    artist: "Kawe & Mc Lele JP",
+    embed: "https://open.spotify.com/embed/track/0QglpM23kl9ldvVdoYNZwF",
+    mode: "brazil"
+  },
+  {
+    title: "Anos Luz",
+    artist: "Matuê",
+    embed: "https://open.spotify.com/embed/track/4hVTpP7CV9imY9U53p45sX",
+    mode: "brazil"
+  },
+  {
+    title: "Tá OK",
+    artist: "MC Kevin o Chris e DENNIS",
+    embed: "https://open.spotify.com/embed/track/0fABszUFNbNq9IW503Gj8v",
+    mode: "brazil"
+  },
+  {
+    title: "Oh Meu Deus",
+    artist: "Projota",
+    embed: "https://open.spotify.com/embed/track/6ZaQRwBNp3xWu5lpib6xO6",
+    mode: "brazil"
+  },
+  {
     title: "Papo de Agustinho",
     artist: "Oruam e Mainstreet",
     embed: "https://open.spotify.com/embed/track/5cCwZJUf8QiCQGnyakhpmF",
