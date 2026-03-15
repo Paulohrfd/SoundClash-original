@@ -12,6 +12,12 @@ const tracks = [
     mode: "brazil"
   },
   {
+    title: "Retrato de um Playboy (Part II)",
+    artist: "Gabriel O Pensador",
+    embed: "https://open.spotify.com/embed/track/3u4wX6aBX6GwGNPUnKlnQa",
+    mode: "brazil"
+  },
+  {
     title: "Cachimbo da Paz (part. Lulu Santos)",
     artist: "Gabriel O Pensador",
     embed: "https://open.spotify.com/embed/track/7E1duSMvHGUcYRgwrMZOUf",
