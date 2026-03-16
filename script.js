@@ -1,3 +1,7 @@
+const STORAGE_KEY = "soundclash_champions_v1";
+const TOURNAMENT_PROGRESS_KEY = "soundclash_tournament_progress_v1";
+let currentMode = "general";
+
 const tracks = [
   {
   title: "Bump, Bump, Bump",
@@ -2060,7 +2064,6 @@ const roundNames = {
   1: "Campeão"
 };
 
-const STORAGE_KEY = "soundclash_champions_v1";
 
 let started = false;
 let currentRound = [];
@@ -2324,14 +2327,12 @@ function renderBattleScreen() {
           : ""
       }
 
-      <button class="main-btn" onclick="startGame()">
+      <button class="main-btn" onclick="clearTournamentProgress(); startGame(currentMode)">
         REINICIAR
       </button>
     </div>
 
-
     <div class="battle-grid">
-
       <div class="card">
         <h2>${left.title}</h2>
         <p>${left.artist}</p>
@@ -2358,10 +2359,8 @@ function renderBattleScreen() {
         </button>
       </div>
 
-
       <div class="vs desktop-vs">VS</div>
       <div class="vs-mobile">VS</div>
-
 
       <div class="card">
         <h2>${right.title}</h2>
@@ -2388,15 +2387,14 @@ function renderBattleScreen() {
           ESCOLHER
         </button>
       </div>
-
     </div>
-
 
     <div class="site-logo">
       <img src="logo.png" alt="SoundClash">
     </div>
   `;
 }
+
 function renderLoadingScreen() {
   return `
     <div class="start-screen hero-screen">
@@ -2444,6 +2442,8 @@ function setLoading(text, delay = 900) {
 }
 
 function startGame(mode = 'general') {
+  currentMode = mode;
+
   let selectedTracks = tracks;
 
   if (mode === 'brazil') {
@@ -2485,6 +2485,7 @@ function startGame(mode = 'general') {
   undoAvailable = true;
   lastState = null;
 
+  saveTournamentProgress();
   render();
 }
   
@@ -2500,10 +2501,10 @@ async function chooseTrack(winner) {
   currentIndex += 2;
 
   if (currentIndex < currentRound.length) {
+    saveTournamentProgress();
     render();
     return;
   }
-
 
   if (currentRound.length === 4) {
     finalsHistory.semi = [...currentRound];
@@ -2516,11 +2517,12 @@ async function chooseTrack(winner) {
   }
 
   if (nextRound.length === 1) {
-    champion = nextRound[0];
-    saveChampion(champion);
-    render();
-    return;
-  }
+  champion = nextRound[0];
+  saveChampion(champion);
+  clearTournamentProgress();
+  render();
+  return;
+}
 
   if (nextRound.length <= 64) {
     currentRound = shuffle([...nextRound]);
@@ -2534,16 +2536,20 @@ async function chooseTrack(winner) {
   const nextPhase = roundNames[currentRound.length] || "Próxima fase";
   loadingText = nextPhase;
   loadingPhase = true;
+  saveTournamentProgress();
   render();
 
   setTimeout(() => {
     loadingPhase = false;
+    saveTournamentProgress();
     render();
   }, 900);
 }
 
 function chooseTrackByIndex(index) {
-  chooseTrack(currentRound[index]);
+  const track = currentRound[index];
+  if (!track) return;
+  chooseTrack(track);
 }
 
 async function generateChampionImage() {
@@ -2619,7 +2625,6 @@ function undoMove() {
 }
 
 function handleRoute() {
-  const path = window.location.pathname.toLowerCase();
 
   if (path === "/general") {
     startGame("general");
@@ -2639,7 +2644,74 @@ function handleRoute() {
   render();
 }
 
+function saveTournamentProgress() {
+  const progress = {
+    started,
+    currentRound,
+    nextRound,
+    currentIndex,
+    champion,
+    finalsHistory,
+    currentMode,
+    loadingPhase,
+    loadingText,
+    lastState,
+    undoAvailable
+  };
 
-handleRoute();
+  localStorage.setItem(
+    TOURNAMENT_PROGRESS_KEY,
+    JSON.stringify(progress)
+  );
+}
 
+function loadTournamentProgress() {
+  const raw = localStorage.getItem(TOURNAMENT_PROGRESS_KEY);
+  if (!raw) return false;
+
+  try {
+    const progress = JSON.parse(raw);
+
+    started = progress.started || false;
+    currentRound = progress.currentRound || [];
+    nextRound = progress.nextRound || [];
+    currentIndex = progress.currentIndex || 0;
+    champion = progress.champion || null;
+    finalsHistory = progress.finalsHistory || {
+      quarter: [],
+      semi: [],
+      final: [],
+      quarterWinners: [],
+      semiWinners: [],
+      finalWinner: null
+    };
+    currentMode = progress.currentMode || "general";
+    loadingPhase = progress.loadingPhase || false;
+    loadingText = progress.loadingText || "";
+    lastState = progress.lastState || null;
+    undoAvailable = progress.undoAvailable ?? true;
+
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function clearTournamentProgress() {
+  localStorage.removeItem(TOURNAMENT_PROGRESS_KEY);
+  
+}
+const path = window.location.pathname.toLowerCase();
+
+if (path === "/general" || path === "/international" || path === "/brazil") {
+  if (loadTournamentProgress() && started && currentRound.length > 0) {
+    render();
+  } else {
+    handleRoute();
+  }
+} else {
+  started = false;
+  champion = null;
+  render();
+}
 
