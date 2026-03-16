@@ -2238,27 +2238,54 @@ function renderWinnerScreen() {
       <h2 class="winner-song">${champion.title}</h2>
       <p class="winner-artist">${champion.artist}</p>
 
-      <div class="share-card">
-        <p class="share-kicker">MINHA COPA NO SOUNDCLASH</p> 
+      <div class="share-card clean-share-card">
+        <p class="share-kicker">MINHA COPA NO SOUNDCLASH</p>
 
-          <div class="bracket-col semi-col">
-            <h4>Semifinal</h4>
-            ${renderBracketPairs(finalsHistory.semi, finalsHistory.semiWinners)}
+        <div class="clean-bracket-section">
+          <h4>Semifinais</h4>
+
+          <div class="clean-match">
+            <div class="clean-team ${finalsHistory.semiWinners.includes(finalsHistory.semi[0]) ? 'winner' : 'loser'}">
+              ${finalsHistory.semi[0].title}
+            </div>
+            <div class="clean-vs">VS</div>
+            <div class="clean-team ${finalsHistory.semiWinners.includes(finalsHistory.semi[1]) ? 'winner' : 'loser'}">
+              ${finalsHistory.semi[1].title}
+            </div>
           </div>
 
-          <div class="bracket-col final-col">
-            <h4>Final</h4>
-            ${renderBracketPairs(finalsHistory.final, finalsHistory.finalWinner ? [finalsHistory.finalWinner] : [])}
-          </div>
-
-          <div class="bracket-col champion-col">
-            <h4>🏆 Campeão</h4>
-            <div class="champion-name">${champion.title}</div>
-            <div class="champion-artist">${champion.artist}</div>
+          <div class="clean-match">
+            <div class="clean-team ${finalsHistory.semiWinners.includes(finalsHistory.semi[2]) ? 'winner' : 'loser'}">
+              ${finalsHistory.semi[2].title}
+            </div>
+            <div class="clean-vs">VS</div>
+            <div class="clean-team ${finalsHistory.semiWinners.includes(finalsHistory.semi[3]) ? 'winner' : 'loser'}">
+              ${finalsHistory.semi[3].title}
+            </div>
           </div>
         </div>
 
-        <p class="share-footer">soundclash</p>
+        <div class="clean-bracket-section">
+          <h4>Final</h4>
+
+          <div class="clean-match final-match">
+            <div class="clean-team ${champion.title === finalsHistory.final[0].title && champion.artist === finalsHistory.final[0].artist ? 'winner' : 'loser'}">
+              ${finalsHistory.final[0].title}
+            </div>
+            <div class="clean-vs">VS</div>
+            <div class="clean-team ${champion.title === finalsHistory.final[1].title && champion.artist === finalsHistory.final[1].artist ? 'winner' : 'loser'}">
+              ${finalsHistory.final[1].title}
+            </div>
+          </div>
+        </div>
+
+        <div class="clean-champion-block">
+          <h4>🏆 Campeão</h4>
+          <div class="clean-champion-name">${champion.title}</div>
+          <div class="clean-champion-artist">${champion.artist}</div>
+        </div>
+
+        <p class="share-footer">soundclashbr.vercel.app</p>
       </div>
 
       <div class="winner-actions">
@@ -2275,41 +2302,68 @@ function renderWinnerScreen() {
 function renderBattleScreen() {
   const left = currentRound[currentIndex];
   const right = currentRound[currentIndex + 1];
+
   const duel = Math.floor(currentIndex / 2) + 1;
   const totalDuels = currentRound.length / 2;
-  const phase = roundNames[currentRound.length] || `${currentRound.length / 2} confrontos`;
+
+  const phase =
+    roundNames[currentRound.length] ||
+    `${currentRound.length / 2} confrontos`;
 
   return `
     <div class="topbar">
-      <div class="badge">Fase: <strong>${phase}</strong></div>
-      <div class="badge">Duelo: <strong>${duel}</strong> de <strong>${totalDuels}</strong></div>
-      ${undoAvailable && lastState ? '<button class="main-btn secondary-btn" onclick="undoMove()">VOLTAR</button>' : ''}
-      <button class="main-btn" onclick="startGame()">REINICIAR</button>
+      <div class="badge">
+        Fase: <strong>${phase}</strong>
+      </div>
+
+      <div class="badge">
+        Duelo: <strong>${duel}</strong> de <strong>${totalDuels}</strong>
+      </div>
+
+      ${
+        undoAvailable && lastState
+          ? '<button class="main-btn secondary-btn" onclick="undoMove()">VOLTAR</button>'
+          : ""
+      }
+
+      <button class="main-btn" onclick="startGame()">
+        REINICIAR
+      </button>
     </div>
 
+
     <div class="battle-grid">
+
       <div class="card">
         <h2>${left.title}</h2>
         <p>${left.artist}</p>
 
         <div class="player">
           <iframe
+            loading="lazy"
             src="${left.embed}"
             width="100%"
-            height="180"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy">
+            height="152"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
           </iframe>
+
           <p class="spotify-note">
             Ouça a música completa entrando no Spotify.
           </p>
         </div>
 
-        <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex})">ESCOLHER</button>
+        <button
+          class="choice-btn"
+          onclick="chooseTrackByIndex(${currentIndex})"
+        >
+          ESCOLHER
+        </button>
       </div>
+
 
       <div class="vs desktop-vs">VS</div>
       <div class="vs-mobile">VS</div>
+
 
       <div class="card">
         <h2>${right.title}</h2>
@@ -2317,20 +2371,28 @@ function renderBattleScreen() {
 
         <div class="player">
           <iframe
+            loading="lazy"
             src="${right.embed}"
             width="100%"
-            height="180"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy">
+            height="152"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
           </iframe>
+
           <p class="spotify-note">
             Ouça a música completa entrando no Spotify.
           </p>
         </div>
 
-        <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex + 1})">ESCOLHER</button>
+        <button
+          class="choice-btn"
+          onclick="chooseTrackByIndex(${currentIndex + 1})"
+        >
+          ESCOLHER
+        </button>
       </div>
+
     </div>
+
 
     <div class="site-logo">
       <img src="logo.png" alt="SoundClash">
@@ -2579,4 +2641,7 @@ function handleRoute() {
   render();
 }
 
+
 handleRoute();
+
+
