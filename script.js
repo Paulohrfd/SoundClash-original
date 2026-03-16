@@ -2196,9 +2196,9 @@ function renderStartScreen() {
       </p>
 
       <div class="mode-buttons">
-        <button class="main-btn hero-btn" onclick="window.location.href='/general'">MÚSICAS GERAIS 🎶</button>
-        <button class="main-btn hero-btn" onclick="window.location.href='/international'">MÚSICAS INTERNACIONAIS 🌎</button>
-        <button class="main-btn hero-btn" onclick="window.location.href='/brazil'">MÚSICAS BRASILEIRAS 🔥</button>
+        <button class="main-btn hero-btn" onclick="clearTournamentProgress(); window.location.href='/general'">MÚSICAS GERAIS 🎶</button>
+<button class="main-btn hero-btn" onclick="clearTournamentProgress(); window.location.href='/international'">MÚSICAS INTERNACIONAIS 🌎</button>
+<button class="main-btn hero-btn" onclick="clearTournamentProgress(); window.location.href='/brazil'">MÚSICAS BRASILEIRAS 🔥</button>
       </div>
 
       <div class="home-ranking-wrap">
@@ -2459,7 +2459,9 @@ function startGame(mode = 'general') {
   }
 
   const shuffled = uniqueTracks(shuffle(selectedTracks));
-  const bracketSize = 2 ** Math.floor(Math.log2(shuffled.length));
+const limited = shuffled.slice(0, 128);
+const bracketSize = 2 ** Math.floor(Math.log2(limited.length));
+currentRound = limited.slice(0, bracketSize);
 
   if (bracketSize < 2) {
     alert("Esse modo ainda não tem músicas suficientes.");
@@ -2467,7 +2469,7 @@ function startGame(mode = 'general') {
   }
 
   started = true;
-  currentRound = shuffled.slice(0, bracketSize);
+  currentRound = limited.slice(0, bracketSize);
   nextRound = [];
   currentIndex = 0;
   champion = null;
@@ -2625,6 +2627,7 @@ function undoMove() {
 }
 
 function handleRoute() {
+  const path = window.location.pathname.toLowerCase();
 
   if (path === "/general") {
     startGame("general");
@@ -2699,19 +2702,81 @@ function loadTournamentProgress() {
 
 function clearTournamentProgress() {
   localStorage.removeItem(TOURNAMENT_PROGRESS_KEY);
-  
 }
-const path = window.location.pathname.toLowerCase();
 
-if (path === "/general" || path === "/international" || path === "/brazil") {
-  if (loadTournamentProgress() && started && currentRound.length > 0) {
+const path = window.location.pathname.toLowerCase();
+const routeMode =
+  path === "/brazil" ? "brazil" :
+  path === "/international" ? "international" :
+  path === "/general" ? "general" :
+  null;
+
+const hasSavedProgress = loadTournamentProgress();
+
+if (routeMode) {
+  if (
+    hasSavedProgress &&
+    currentMode === routeMode &&
+    currentRound.length > 0
+  ) {
     render();
   } else {
     handleRoute();
   }
 } else {
+  clearTournamentProgress();
   started = false;
   champion = null;
+  currentMode = null;
+  currentRound = [];
+  nextRound = [];
+  currentIndex = 0;
   render();
 }
 
+window.addEventListener("popstate", () => {
+  const currentPath = window.location.pathname.toLowerCase();
+
+  if (currentPath === "/" || currentPath === "") {
+    clearTournamentProgress();
+    started = false;
+    champion = null;
+    currentMode = null;
+    currentRound = [];
+    nextRound = [];
+    currentIndex = 0;
+    finalsHistory = {
+      quarter: [],
+      semi: [],
+      final: [],
+      quarterWinners: [],
+      semiWinners: [],
+      finalWinner: null
+    };
+    render();
+    return;
+  }
+
+  handleRoute();
+});
+
+
+function goHome() {
+  clearTournamentProgress();
+  started = false;
+  champion = null;
+  currentRound = [];
+  nextRound = [];
+  currentIndex = 0;
+  finalsHistory = {
+    quarter: [],
+    semi: [],
+    final: [],
+    quarterWinners: [],
+    semiWinners: [],
+    finalWinner: null
+  };
+
+  
+  render();
+}
