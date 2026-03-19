@@ -3870,7 +3870,7 @@ function renderWinnerScreen() {
           <div class="clean-champion-artist">${champion.artist}</div>
         </div>
 
-        <p class="share-footer">soundclashbr.vercel.app</p>
+        <p class="share-footer">SoundClash.site</p>
       </div>
 
       <div class="winner-actions">
