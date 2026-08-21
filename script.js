@@ -4618,3 +4618,9 @@ function goHome() {
     semiWinners: [],
     finalWinner: null
   };
+
+
+
+  
+  render();
+}
