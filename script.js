@@ -4468,7 +4468,7 @@ const roundNames = {
   4: "Semifinal",
   2: "Final",
   1: "Campeão"
-};
+}
 
 
 let started = false;
