@@ -364,7 +364,7 @@ const tracks = [
   embed: "https://open.spotify.com/embed/track/3SXQpQGnAjn0pV16MVuzku",
   mode: "brazil"
   },
-      {
+ {
   title: "What I've Done",
   artist: "Linkin Park",
   embed: "https://open.spotify.com/embed/track/18lR4BzEs7e3qzc0KVkTpU",
