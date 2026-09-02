@@ -4457,7 +4457,7 @@ const tracks = [
   mode: "international"
 },
 
-];
+]
 
 const roundNames = {
   128: "64avos de final",
