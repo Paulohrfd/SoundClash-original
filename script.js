@@ -4459,7 +4459,6 @@ const tracks = [
 
 ];
 
-
 const roundNames = {
   128: "64avos de final",
   64: "32avos de final",
