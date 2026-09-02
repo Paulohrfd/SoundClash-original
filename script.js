@@ -370,7 +370,7 @@ const tracks = [
   embed: "https://open.spotify.com/embed/track/18lR4BzEs7e3qzc0KVkTpU",
   mode: "international"
 },
-        {
+ {
   title: "Quero Ser Feliz Também",
   artist: "Natiruts",
   embed: "https://open.spotify.com/embed/track/09h91oP3t1c5fSEI5P6maS",
